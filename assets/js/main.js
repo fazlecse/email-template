@@ -138,41 +138,57 @@ $(document).ready(function () {
 
     });
     // Testimonial section start
-    // Slick slider 
+    // Owl carousel 
     $(function (e) {
         "use strict";
-        e(".testimonial-slider-slick").slick({
-            slidesToShow: true,
-            slidesToScroll: true,
-            arrows: false,
-            focusOnSelect: true,
+        $('.testimonial-carousel').owlCarousel({
+            loop: true,
+            autoplay: false,
+            center: true,
+            margin: 10,
+            nav: false,
             dots: true,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            // rtl: true,
-            appendDots: e(".custom-testimonial-pagination"),
-            responsive: [{
-                breakpoint: 767,
-                settings: {
-                    autoplay: true,
+            // rtl:true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
                 }
-            }, {
-                breakpoint: 420,
-                settings: {
-                    autoplay: true,
-                }
-            }]
-        }), e("a[data-slide]").click(function (s) {
-            s.preventDefault();
-            var o = e(this).data("slide");
-            e(".testimonial-slider-slick").slick("slickGoTo", o - 1)
-        })
+            }
+        });
     });
     // Testimonial section start
 
 
+    // noUiSlider1 start pricing plan
+    var nonLinearSlider = document.getElementById('slider');
 
+    noUiSlider.create(nonLinearSlider, {
+        // connect: true,
+        behaviour: 'tap',
+        start: [10],
+        range: {
+            // Starting at 500, step the value by 500,
+            // until 4000 is reached. From there, step by 1000.
+            'min': [0],
+            'max': [100]
+        }
+    });
+    var nodes = [
+        document.getElementById('slider-value'),
+    ];
 
+    // Display the slider value and how far the handle moved
+    // from the left edge of the slider.
+    nonLinearSlider.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
+        nodes[handle].innerHTML = values[handle] + ', ';
+    });
+    // noUiSlider end
 
 
 
@@ -207,33 +223,32 @@ const previewImage = (id) => {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-// Dark theme start
-const toggleBtn = document.getElementById("toggle-btn");
-const body = document.querySelector("body");
-toggleBtn.addEventListener("click", function () {
-    document.body.classList.toggle("dark-theme");
-    if (document.body.classList.contains("dark-theme")) {
-        localStorage.setItem("dark-theme", 1);
-    } else {
-        localStorage.setItem("dark-theme", 0);
-    }
-    setTheme();
-});
+// // Dark theme start
+// const toggleBtn = document.getElementById("toggle-btn");
+// const body = document.querySelector("body");
+// toggleBtn.addEventListener("click", function () {
+//     document.body.classList.toggle("dark-theme");
+//     if (document.body.classList.contains("dark-theme")) {
+//         localStorage.setItem("dark-theme", 1);
+//     } else {
+//         localStorage.setItem("dark-theme", 0);
+//     }
+//     setTheme();
+// });
 
-function setTheme() {
-    const isDarkTheme = localStorage.getItem("dark-theme");
-    if (isDarkTheme == 1) {
-        document.querySelector('body').classList.add('dark-theme');
-        document.getElementById("moon").style.display = "none";
-        document.getElementById("sun").style.display = "block";
-    } else {
-        document.querySelector('body').classList.remove('dark-theme');
-        document.getElementById("moon").style.display = "block";
-        document.getElementById("sun").style.display = "none";
-    }
-}
-setTheme();
-// Dark theme end
-
+// function setTheme() {
+//     const isDarkTheme = localStorage.getItem("dark-theme");
+//     if (isDarkTheme == 1) {
+//         document.querySelector('body').classList.add('dark-theme');
+//         document.getElementById("moon").style.display = "none";
+//         document.getElementById("sun").style.display = "block";
+//     } else {
+//         document.querySelector('body').classList.remove('dark-theme');
+//         document.getElementById("moon").style.display = "block";
+//         document.getElementById("sun").style.display = "none";
+//     }
+// }
+// setTheme();
+// // Dark theme end
 
 
