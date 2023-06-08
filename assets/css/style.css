@@ -379,9 +379,6 @@ Breadcrumb start
 .breadcrumb {
   display: inline-flex;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 5px 15px;
-  border-radius: 8px;
   margin-top: 10px;
 }
 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
@@ -1461,6 +1458,8 @@ end
 }
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
   color: var(--primary-color);
+}
+.navbar .navbar-nav .nav-link:hover {
   background-color: var(--bg-color1);
 }
 .navbar .nav-right li:not(:last-child) {
@@ -1475,9 +1474,13 @@ end
   font-family: var(--heading-font);
   display: flex;
   align-items: center;
+  border-radius: 15px;
 }
 .navbar .nav-right li .link:hover, .navbar .nav-right li .link.active {
   color: var(--primary-color);
+}
+.navbar .nav-right li .link:hover {
+  background-color: var(--bg-color1);
 }
 .navbar .nav-right li .link i {
   margin-right: 5px;
@@ -2394,11 +2397,12 @@ end
   padding-bottom: 70px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(#dceaff 0%, #f5f9ff 100%);
+  background: url(../images/background/bg-1.png);
+  background-size: cover;
+  background-position: center;
 }
 .banner-area h3 {
   font-size: 40px;
-  font-weight: 700;
   margin-bottom: 10px;
 }
 
@@ -2431,6 +2435,13 @@ end
 /*----------------------------------------------
 end
 ----------------------------------------------*/
+.developers-banner {
+  padding: 100px 0 150px;
+  background: linear-gradient(rgba(245, 249, 255, 0.9), rgb(220, 234, 255)), url(../images/banner/group\ photo-bro2.png);
+  background-size: cover;
+  background-position: top;
+}
+
 /*----------------------------------------------
 14. Contact section start
 ----------------------------------------------*/
