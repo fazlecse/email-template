@@ -50,6 +50,7 @@ Typography
   --primary-color-opacity-low: rgb(51, 104, 250, 0.1);
   --soft-red-opacity-low: rgba(216, 42, 103, 0.1);
   --bg-color1: #F3F4F6;
+  --bg-color2: #282c34;
   --body-color: #707070;
   --border-color1: #f2f2f2;
   --border-color2: #e1e1e1;
@@ -2435,11 +2436,200 @@ end
 /*----------------------------------------------
 end
 ----------------------------------------------*/
-.developers-banner {
+/*----------------------------------------------
+Docs banner section start
+----------------------------------------------*/
+.docs-banner {
   padding: 100px 0 150px;
   background: linear-gradient(rgba(245, 249, 255, 0.9), rgb(220, 234, 255)), url(../images/banner/group\ photo-bro2.png);
   background-size: cover;
   background-position: top;
+}
+
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+Developer section start
+----------------------------------------------*/
+.developer-section {
+  background-color: var(--bg-color1);
+}
+.developer-section .docs-inner {
+  margin-top: -130px;
+}
+
+.docs-card {
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: var(--shadow4);
+  transition: var(--transition);
+}
+.docs-card:hover {
+  box-shadow: none;
+}
+.docs-card .docs-header {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 20px;
+  background: linear-gradient(rgba(245, 249, 255, 0.9), rgb(220, 234, 255));
+}
+.docs-card .docs-body {
+  padding: 20px;
+}
+
+/*----------------------------------------------
+end
+----------------------------------------------*/
+.docs-nav {
+  box-shadow: var(--shadow2);
+}
+
+.docs-section-title {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color2);
+}
+
+.docs-title {
+  padding: 20px 0;
+}
+
+.docs-section {
+  padding: 20px 0;
+}
+
+.docs-link {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.language-bash {
+  color: var(--white);
+  background-color: var(--bg-color2);
+}
+.language-bash .docs-pre {
+  position: relative;
+  padding: 15px 15px 15px 50px;
+}
+.language-bash .docs-pre .line-numbers-rows {
+  position: absolute;
+  color: #9e9e9e;
+  left: 15px;
+  top: 15px;
+  border-right: 1px solid #9e9e9e;
+  width: 20px;
+}
+.language-bash .docs-pre .line-numbers-rows span {
+  display: block;
+}
+
+.navbar-toggler {
+  background: var(--primary-color);
+  color: var(--white);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.cmn-btn-close {
+  font-size: 18px;
+  background: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--white);
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  box-shadow: none;
+}
+
+.sidebar-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-section {
+  margin-top: 75px;
+  background-color: var(--bg-color1);
+  box-shadow: var(--shadow2);
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  position: fixed;
+}
+.sidebar-section .nav-area {
+  padding-bottom: 120px;
+  overflow-y: auto;
+  height: 100%;
+}
+.sidebar-section .nav-area .nav-item .nav-content {
+  margin-left: 30px;
+}
+.sidebar-section .nav-area .nav-item .nav-content li a {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.sidebar-section .nav-area .nav-item .nav-content li a.active {
+  color: var(--primary-color);
+}
+.sidebar-section .nav-area .nav-item .nav-content li a i {
+  font-size: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.sidebar-section .nav-area .nav-link {
+  color: var(--heading-color);
+  display: flex;
+  align-items: center;
+}
+.sidebar-section .nav-area .nav-link:hover {
+  color: var(--primary-color);
+}
+.sidebar-section .nav-area .nav-link i {
+  transition: transform 0.2s ease-in-out;
+  width: 18px;
+  height: 18px;
+  background-color: var(--bg-color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.sidebar-section .nav-area .nav-link i.first {
+  margin-right: 5px;
+}
+.sidebar-section .nav-area .nav-link i.last {
+  margin-left: auto;
+}
+.sidebar-section .nav-area .nav-link:not(.collapsed) i.last {
+  transform: rotate(180deg);
+}
+
+main {
+  width: calc(100% - 300px);
+  margin-left: auto;
+  padding: 50px;
+  margin-top: 75px;
+}
+main .main-inner {
+  max-width: 1000px;
+  margin: auto;
 }
 
 /*----------------------------------------------

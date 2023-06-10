@@ -56,7 +56,7 @@ Typography
     --primary-color-opacity-low: rgb(51, 104, 250, 0.1);
     --soft-red-opacity-low: rgba(216, 42, 103, 0.1);
     --bg-color1: #F3F4F6;
-    // --bg-color2: #EEF5FF;
+    --bg-color2: #282c34;
     // --bg-color3: #1E2022;
     // --bg-color4: #25282A;
     // --bg-color5: #242C2E;
@@ -1096,8 +1096,8 @@ section {
     box-shadow: var(--shadow4);
 
     &:hover {
-       background-color: var(--primary-color);
-       color: var(--white);
+        background-color: var(--primary-color);
+        color: var(--white);
     }
 }
 
@@ -1602,7 +1602,8 @@ end
             &.active {
                 color: var(--primary-color);
             }
-            &:hover{
+
+            &:hover {
                 background-color: var(--bg-color1);
             }
         }
@@ -1630,7 +1631,8 @@ end
                 &.active {
                     color: var(--primary-color);
                 }
-                &:hover{
+
+                &:hover {
                     background-color: var(--bg-color1);
                 }
 
@@ -2325,8 +2327,8 @@ end
 .how-it-work {
     background-color: var(--bg-color1);
 
-    .how-it-work-content{
-        .btn-area{
+    .how-it-work-content {
+        .btn-area {
             margin-top: 30px;
         }
     }
@@ -2579,7 +2581,7 @@ end
 ----------------------------------------------*/
 
 .blog-section {
-background-color: var(--bg-color1);
+    background-color: var(--bg-color1);
 }
 
 .pr1-blog-content {
@@ -2616,7 +2618,8 @@ background-color: var(--bg-color1);
 
     .content-box {
         padding: 20px;
-        .cmn-btn i{
+
+        .cmn-btn i {
             margin-left: 5px;
         }
     }
@@ -2885,6 +2888,7 @@ end
     a {
         font-weight: 400;
         color: var(--heading-color);
+
         &:hover {
             color: var(--primary-color);
         }
@@ -3003,15 +3007,233 @@ end
 /*----------------------------------------------
 end
 ----------------------------------------------*/
-
-// Developers banner section start
-.developers-banner{
+/*----------------------------------------------
+Docs banner section start
+----------------------------------------------*/
+.docs-banner {
     padding: 100px 0 150px;
     background: linear-gradient(rgb(245 249 255 / 90%), rgb(220 234 255)), url(../images/banner/group\ photo-bro2.png);
     background-size: cover;
     background-position: top;
 }
-// Developers banner section end
+
+/*----------------------------------------------
+end
+----------------------------------------------*/
+/*----------------------------------------------
+Developer section start
+----------------------------------------------*/
+.developer-section {
+    background-color: var(--bg-color1);
+
+    .docs-inner {
+        margin-top: -130px;
+    }
+}
+
+.docs-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow4);
+    transition: var(--transition);
+
+    &:hover {
+        box-shadow: none;
+    }
+
+    .docs-header {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 20px;
+        background: linear-gradient(rgba(245, 249, 255, 0.9), rgb(220, 234, 255));
+    }
+
+    .docs-body {
+        padding: 20px;
+    }
+
+}
+
+/*----------------------------------------------
+end
+----------------------------------------------*/
+// Docs section start 
+.docs-nav {
+    box-shadow: var(--shadow2);
+}
+
+.docs-section-title {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color2);
+}
+
+.docs-title {
+    padding: 20px 0;
+}
+
+.docs-section {
+    padding: 20px 0;
+}
+
+.docs-link {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.language-bash {
+    color: var(--white);
+    background-color: var(--bg-color2);
+
+    .docs-pre {
+        position: relative;
+        padding: 15px 15px 15px 50px;
+
+        .line-numbers-rows {
+            position: absolute;
+            color: #9e9e9e;
+            left: 15px;
+            top: 15px;
+            border-right: 1px solid #9e9e9e;
+            width: 20px;
+
+            span {
+                display: block;
+            }
+
+        }
+    }
+}
+
+// Sidebar section start
+.navbar-toggler {
+    background: var(--primary-color);
+    color: var(--white);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.cmn-btn-close {
+    font-size: 18px;
+    background: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    box-shadow: none;
+}
+
+.sidebar-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-section {
+    margin-top: 75px;
+    background-color: var(--bg-color1);
+    box-shadow: var(--shadow2);
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+
+    .nav-area {
+        padding-bottom: 120px;
+        overflow-y: auto;
+        height: 100%;
+
+        .nav-item {
+            .nav-content {
+                margin-left: 30px;
+
+                li {
+                    a {
+                        padding: 5px;
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+
+                        &.active {
+                            color: var(--primary-color);
+                        }
+
+                        i {
+                            font-size: 8px;
+                            margin-right: 5px;
+                            border-radius: 50%;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .nav-link {
+            color: var(--heading-color);
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+
+            i {
+                transition: transform 0.2s ease-in-out;
+                width: 18px;
+                height: 18px;
+                background-color: var(--bg-color1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                border-radius: 5px;
+            }
+
+            i.first {
+                margin-right: 5px;
+            }
+
+            i.last {
+                margin-left: auto;
+            }
+
+            &:not(.collapsed) i.last {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+// Sidebar section end
+main {
+    width: calc(100% - 300px);
+    margin-left: auto;
+    padding: 50px;
+    margin-top: 75px;
+
+    .main-inner {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+// Docs section end
+
 
 /*----------------------------------------------
 14. Contact section start
