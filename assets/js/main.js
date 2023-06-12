@@ -3,6 +3,11 @@ const preloader = document.getElementById("preloader");
 function preloder_function() {
     preloader.style.display = "none";
 }
+// toggleSideMenu start
+const toggleSideMenu = () => {
+    document.body.classList.toggle("toggle-sidebar");
+};
+// toggleSideMenu end
 
 // add bg to nav
 window.addEventListener("scroll", function () {
@@ -167,14 +172,11 @@ $(document).ready(function () {
 
     // noUiSlider1 start pricing plan
     var nonLinearSlider = document.getElementById('slider');
-
     noUiSlider.create(nonLinearSlider, {
-        // connect: true,
+        connect: true,
         behaviour: 'tap',
         start: [10],
         range: {
-            // Starting at 500, step the value by 500,
-            // until 4000 is reached. From there, step by 1000.
             'min': [0],
             'max': [100]
         }
@@ -213,7 +215,6 @@ $(document).ready(function () {
 
 
 
-
 // input file preview
 const previewImage = (id) => {
     document.getElementById(id).src = URL.createObjectURL(event.target.files[0]);
@@ -223,32 +224,28 @@ const previewImage = (id) => {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-// // Dark theme start
-// const toggleBtn = document.getElementById("toggle-btn");
-// const body = document.querySelector("body");
-// toggleBtn.addEventListener("click", function () {
-//     document.body.classList.toggle("dark-theme");
-//     if (document.body.classList.contains("dark-theme")) {
-//         localStorage.setItem("dark-theme", 1);
-//     } else {
-//         localStorage.setItem("dark-theme", 0);
-//     }
-//     setTheme();
-// });
+// Copy text start
+function copyTextFunc() {
+    // get the container
+    const element = document.querySelector('.docs-code');
+    // Create a fake `textarea` and set the contents to the text
+    // you want to copy
+    const storage = document.createElement('textarea');
+    storage.value = element.innerHTML;
+    element.appendChild(storage);
 
-// function setTheme() {
-//     const isDarkTheme = localStorage.getItem("dark-theme");
-//     if (isDarkTheme == 1) {
-//         document.querySelector('body').classList.add('dark-theme');
-//         document.getElementById("moon").style.display = "none";
-//         document.getElementById("sun").style.display = "block";
-//     } else {
-//         document.querySelector('body').classList.remove('dark-theme');
-//         document.getElementById("moon").style.display = "block";
-//         document.getElementById("sun").style.display = "none";
-//     }
-// }
-// setTheme();
-// // Dark theme end
+    // Copy the text in the fake `textarea` and remove the `textarea`
+    storage.select();
+    storage.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+    element.removeChild(storage);
+}
+// Copy text end
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
 
 
