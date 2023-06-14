@@ -15,19 +15,22 @@ Version       : 1.0
 03. Hero section start
 04. Feature section start
 05. About section start
-06. How it works section start
+06. Pricing section start
 07. Testimonial section start
-08. Faq section start
-09. Blog section start
-10. Newsletter section start
+08. How it works section start
+09. Faq section start
+10. Blog section start
 11. Footer section start
 12. Copyright section start
 13. Banner section start
-14. Contact section start
-15. Map section start
-16. Login Signup section start
-17. Blog details section start
-18. Pagination section start
+14. Docs banner section start
+15. Developer section start
+16. Docs section start 
+17. Contact section start
+18. Login Signup section start
+19. Blog details section start
+20. Pagination section start
+21. Error section start
 ----------------------------------------------*/
 
 
@@ -56,12 +59,9 @@ Typography
     --primary-color-opacity-low: rgb(51, 104, 250, 0.1);
     --soft-red-opacity-low: rgba(216, 42, 103, 0.1);
     --bg-color1: #F3F4F6;
-    // --bg-color1: #F5F7F9;
     --bg-color2: #282c34;
     --bg-color3: #152748;
     --bg-color4: #424449;
-    // --bg-color4: #25282A;
-    // --bg-color5: #242C2E;
     --body-color: #707070;
     --border-color1: #f2f2f2;
     --border-color2: #e1e1e1;
@@ -69,78 +69,10 @@ Typography
 
     --shadow1: 0px 3px 5px 0px rgba(0, 0, 0, 0.10);
     --shadow2: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
-    --shadow4: 5px 5px 20px rgba(54, 97, 252, .15);
+    --shadow3: 5px 5px 20px rgba(54, 97, 252, .15);
     --transition: all .3s ease-in-out;
 }
 
-.dark-theme {
-    background-color: var(--bg-color3);
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: var(--white);
-    }
-
-    p {
-        color: var(--grayish-blue);
-    }
-
-    .form-control,
-    .form-select {
-        color: var(--white);
-        border: 1px solid var(--bg-color3);
-        background-color: var(--bg-color3);
-
-        &:focus {
-            border: 1px solid var(--primary-color);
-        }
-
-        &::placeholder {
-            color: var(--white);
-        }
-    }
-
-    .form-select {
-        background-image: url(../images/accordion/dark-down-arrow.png);
-    }
-
-    .input-group-text {
-        background: var(--bg-color4);
-    }
-
-    .search-form button {
-        color: var(--white);
-    }
-
-    .login-btn {
-        color: var(--white);
-    }
-
-    hr.divider:after {
-        background-color: var(--bg-color4);
-        color: var(--white);
-    }
-
-    .icon-box {
-        background-color: var(--bg-color6);
-    }
-
-    .feedback-inner-item .ratings {
-        background: var(--bg-color4);
-    }
-
-    .cmn-btn3 {
-        background: var(--bg-color6);
-        border: 1px solid var(--bg-color3);
-        color: var(--white);
-    }
-
-
-}
 
 /*----------------------------------------------
 Reset section start
@@ -170,14 +102,6 @@ preloader start
     z-index: 99999;
 }
 
-// Dark theme preloader strat 
-.dark-theme {
-    #preloader {
-        background: var(--bg-color3) url(../images/preloader/preloader-darktheme.gif) no-repeat center;
-    }
-}
-
-// Dark theme preloader end
 /*----------------------------------------------
 end
 ----------------------------------------------*/
@@ -492,7 +416,7 @@ h1 {
     font-size: 58px;
     margin-bottom: 25px;
     font-weight: 500;
-    line-height: 70px;
+    line-height: 60px;
 }
 
 h2 {
@@ -514,6 +438,12 @@ h3 {
     font-size: 32px;
     margin-bottom: 15px;
     font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    h3 {
+        font-size: 24px;
+    }
 }
 
 h4 {
@@ -646,19 +576,6 @@ Offcanvaes section start
     opacity: 1;
 }
 
-#sun {
-    display: none;
-}
-
-// Dark theme offcanvas start 
-.dark-theme {
-    .offcanvas.offcanvas-end {
-        background-color: var(--bg-color6);
-        border-left: 1px solid var(--bg-color3);
-    }
-}
-
-// Dark theme offcanvas end
 /*----------------------------------------------
 end 
 ----------------------------------------------*/
@@ -683,10 +600,11 @@ end
     }
 }
 
+// Shape area start
 .shape {
     position: absolute;
     background-color: var(--white);
-    box-shadow: var(--shadow4);
+    box-shadow: var(--shadow3);
     padding: 15px;
     border-radius: 10px;
     text-transform: capitalize;
@@ -707,13 +625,11 @@ end
 }
 
 .shape1 {
-    position: absolute;
     top: 50px;
     left: -70px;
 }
 
 .shape2 {
-    position: absolute;
     bottom: 50px;
     right: -70px;
 
@@ -722,20 +638,46 @@ end
     }
 }
 
-.shape3 {
-    position: absolute;
-    top: 240px;
-    left: 365px;
-    z-index: -1;
+// Responsive shape area start
+@media (max-width: 991px) {
+    .shape {
+        .icon-area {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
+
+    .shape1 {
+        left: -25px;
+    }
+
+    .shape2 {
+        right: -25px;
+    }
 }
 
-.shape4 {
-    position: absolute;
-    top: 285px;
-    left: 385px;
-    z-index: -1;
-    max-width: 175px;
+@media (max-width: 370px) {
+    .shape1 {
+        left: -7px;
+    }
+
+    .shape2 {
+        right: -7px;
+    }
 }
+
+// Responsive shape area end
+// Shape area end
 
 .section-header {
     margin-bottom: 30px;
@@ -1087,7 +1029,6 @@ section {
     }
 }
 
-
 .cmn-para-text {
     max-width: 700px;
     font-size: 16px;
@@ -1113,6 +1054,12 @@ section {
 
 }
 
+@media (max-width: 991px) {
+    .section-subtitle {
+        font-size: 16px;
+    }
+}
+
 .social-area ul li a {
     width: 40px;
     height: 40px;
@@ -1123,7 +1070,7 @@ section {
     border-radius: 10px;
     background: var(--white);
     color: var(--heading-color);
-    box-shadow: var(--shadow4);
+    box-shadow: var(--shadow3);
 
     &:hover {
         background-color: var(--primary-color);
@@ -1191,7 +1138,7 @@ hr.divider:after {
     position: relative;
     top: -12px;
     padding: 0 16px;
-    background: #F8F4FA;
+    background: var(--white);
     color: var(--heading-color);
 }
 
@@ -1579,10 +1526,6 @@ end
     z-index: 9999;
 }
 
-.transparent-nav.active .nav-link {
-    color: var(--black) !important;
-}
-
 .navbar {
     transition: all 0.5s ease-in-out;
     padding: 0;
@@ -1721,46 +1664,28 @@ end
 
 // Nav responsive end
 // Rtl nav start
-.rtl .navbar .nav-right li:not(:last-child) {
-    margin-right: 0;
-    margin-left: 10px;
+.rtl {
+    .navbar {
+        .nav-right {
+            li {
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-left: 15px;
+                }
+
+                .link i {
+                    margin-right: 0;
+                    margin-left: 5px;
+                }
+            }
+
+        }
+    }
 }
 
 // Rtl nav end
-// Dark-theme navbar start
-.dark-theme {
-    .navbar {
-        &.active {
-            background-color: var(--bg-color6);
-        }
-
-        .navbar-nav {
-            .nav-link {
-                color: var(--white);
-
-                &.active {
-                    color: var(--primary-color);
-                }
-
-                &:hover {
-                    color: var(--primary-color);
-                }
-            }
-        }
-    }
-
-    .nav-right {
-        li {
-            .toggle-btn {
-                color: var(--white);
-            }
-        }
-    }
-}
-
-// Dark-theme navbar end
 /*----------------------------------------------
-end
+Nav end
 ----------------------------------------------*/
 
 
@@ -1805,35 +1730,14 @@ end
     }
 }
 
-// Dark theme bottom nav section start 
-.dark-theme {
-    .bottom-nav {
-        background-color: var(--bg-color6);
-
-        .nav-item {
-            .nav-link {
-                color: var(--white);
-            }
-        }
-    }
-
-
-}
-
-// Dark theme bottom nav section end
 /*----------------------------------------------
-end
-----------------------------------------------*/
-
-/*----------------------------------------------
-end
+Bottom Mobile, Tab nav end
 ----------------------------------------------*/
 
 
 /*----------------------------------------------
 03. Hero section start
 ----------------------------------------------*/
-
 .hero-section {
     padding: 200px 0 100px;
 
@@ -1918,17 +1822,8 @@ end
 }
 
 // Hero rtl end
-// Dark theme hero area start
-.dark-theme {
-    .hero-section {
-        background: var(--bg-color3);
-    }
-}
-
-// Dark theme hero area end
-
 /*----------------------------------------------
-end
+Hero end
 ----------------------------------------------*/
 
 /*----------------------------------------------
@@ -1953,7 +1848,6 @@ end
     }
 }
 
-
 .feature-box {
     display: flex;
     margin-bottom: 30px;
@@ -1972,7 +1866,7 @@ end
     width: 70px;
     min-width: 70px;
     height: 70px;
-    box-shadow: var(--shadow4);
+    box-shadow: var(--shadow3);
     border-radius: 50px;
     color: var(--primary-color);
     font-size: 26px;
@@ -2001,9 +1895,7 @@ end
 }
 
 // Feature responsive start
-
 @media (max-width: 991px) {
-
     .icon-box {
         min-width: 50px;
         width: 50px;
@@ -2013,19 +1905,31 @@ end
 
 }
 
+@media (max-width: 767px) {
+    .feature-box {
+        max-width: 100%;
+    }
+}
+
 // Feature responsive end
 // Feature rtl start
 
 .rtl {
-    .feature-box.ms-lg-4 {
-        margin-left: 0;
-        margin-right: 24px;
+    .feature-box-right {
+        .icon-box {
+            margin-right: 20px;
+            margin-left: 0;
+        }
+        .text-box{
+            text-align: left;
+        }
     }
 
     .icon-box {
         margin-right: 0;
         margin-left: 20px;
     }
+
 
     @media (max-width: 991px) {
         .feature-box.ms-lg-4 {
@@ -2035,16 +1939,8 @@ end
 }
 
 // Feature rtl end
-// Dark theme feature section start
-.dark-theme {
-    .feature-section {
-        background: var(--bg-color4);
-    }
-}
-
-// Dark theme feature section end
 /*----------------------------------------------
-end
+Feature end
 ----------------------------------------------*/
 
 
@@ -2080,18 +1976,10 @@ end
 }
 
 // Rtl about end
-// Dark theme about section start
-.dark-theme {
-    .about-section {
-        background: var(--bg-color3);
-    }
-
-}
-
-// Dark theme about section end
 /*----------------------------------------------
-end
+About end
 ----------------------------------------------*/
+
 /*----------------------------------------------
 06. Pricing section start
 ----------------------------------------------*/
@@ -2218,62 +2106,6 @@ end
     }
 }
 
-.prepaid-plan {
-    .section-body {
-        display: flex;
-        justify-content: space-between;
-        padding: initial;
-    }
-
-    .price-area {
-        padding: 15px;
-        background-color: var(--black);
-        color: var(--white);
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        width: 35%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .price-title {
-            font-size: 40px;
-            font-family: var(--heading-font);
-            font-weight: 700;
-        }
-    }
-
-    .content-details {
-        padding: 15px;
-    }
-
-    .prepaid-title {
-        font-size: 22px;
-        font-weight: 600;
-        font-family: var(--heading-font);
-    }
-
-    sup {
-        font-size: 22px;
-        text-transform: uppercase;
-        font-weight: 800;
-        color: var(--grayish-blue);
-    }
-
-    .prepaid-info {
-        margin-bottom: 0;
-        color: var(--grayish-blue);
-
-        .highlight {
-            font-weight: 600;
-        }
-    }
-
-    .btn-area {
-        padding: 15px;
-    }
-}
-
 // Pricing responsive start
 @media (max-width: 1199px) {
     .prepaid-plan {
@@ -2302,21 +2134,7 @@ end
     }
 }
 
-@media (max-width: 480px) {
-    .prepaid-plan {
-        .section-body {
-            flex-direction: column;
-            text-align: center;
-
-            .price-area {
-                width: 100%;
-                border-radius: 10px;
-            }
-        }
-    }
-}
-
-@media (max-width: 575px) {
+@media (max-width: 767px) {
     .cmn-tabs .nav-pills {
         flex-direction: column;
         align-items: center;
@@ -2324,12 +2142,7 @@ end
 
         .nav-item {
             width: 100%;
-
-            .nav-link {
-                width: 100%;
-            }
         }
-
     }
 }
 
@@ -2353,57 +2166,13 @@ end
 // Pricing rtl end
 // ----------------------------------------------------
 /*----------------------------------------------
-end
+Pricing end
 ----------------------------------------------*/
-/*----------------------------------------------
-06. How it works section start
-----------------------------------------------*/
-.how-it-work {
-    background-color: var(--bg-color1);
 
-    .how-it-work-content {
-        .btn-area {
-            margin-top: 30px;
-        }
-    }
-}
-
-// How it works responsive start
-@media (max-width: 767px) {
-    .how-it-work {
-        .btn-area {
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
-
-// How it works responsive end
-
-// How it works rtl start
-.rtl .how-it-work .how-it-work-wrapper .how-it-work-item .section-header .number {
-    margin-right: 0;
-    margin-left: 15px;
-}
-
-// How it works rtl end
-// Dark theme how it work section start
-.dark-theme {
-    .how-it-work {
-        background: var(--bg-color4);
-    }
-
-}
-
-// Dark theme how it work section end
-/*----------------------------------------------
-end
-----------------------------------------------*/
 
 /*----------------------------------------------
 07. Testimonial section start
 ----------------------------------------------*/
-
 .testimonial-section {
     .testimonial-box {
         padding: 20px;
@@ -2461,55 +2230,52 @@ end
 }
 
 
-// .owl-theme {
-// 	.owl-dots {
-// 		.owl-dot {
-// 			span {
-// 				width: 10px;
-// 				height: 10px;
-// 				background: var(--theme_color);
-// 				transition: all 0.5s ease-in-out;
-// 			}
-// 			&:hover {
-// 				span {
-// 					background: var(--theme_color);
-// 				}
-// 			}
-// 		}
-// 		.owl-dot.active {
-// 			span {
-// 				background: var(--theme_color);
-// 				background: var(--theme_color);
-// 				width: 30px;
-// 				height: 10px;
-// 			}
-// 		}
-// 		span {
-// 			background: var(--theme_color);
-// 			width: 30px;
-// 			height: 10px;
-// 		}
-// 	}
-// }
-
 
 
 // Rtl testimonial end
-// Dark theme testimonial section start
-.dark-theme {
-    .testimonial-section {
-        background: var(--bg-color3);
-    }
-
-}
-
-// Dark theme testimonial section end
 /*----------------------------------------------
-end
+Testimonial end
 ----------------------------------------------*/
 
 /*----------------------------------------------
-08. Faq section start
+08. How it works section start
+----------------------------------------------*/
+.how-it-work {
+    background-color: var(--bg-color1);
+
+    .how-it-work-content {
+        .btn-area {
+            margin-top: 30px;
+        }
+    }
+}
+
+// How it works responsive start
+@media (max-width: 767px) {
+    .how-it-work {
+        .btn-area {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+// How it works responsive end
+
+// How it works rtl start
+.rtl .how-it-work .how-it-work-wrapper .how-it-work-item .section-header .number {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+// How it works rtl end
+
+/*----------------------------------------------
+How it works end
+----------------------------------------------*/
+
+/*----------------------------------------------
+09. Faq section start
 ----------------------------------------------*/
 
 .faq-section {
@@ -2586,34 +2352,13 @@ end
 }
 
 // Faq rtl end
-// Dark theme faq section start
-.dark-theme {
-    .faq-section {
-        background: var(--bg-color4);
-
-        .accordion-button {
-            color: var(--white);
-
-            &:not(.collapsed) {
-                color: var(--primary-color);
-            }
-        }
-
-        .accordion-item {
-            border-bottom: 1px solid var(--border-color4);
-        }
-    }
-}
-
-// Dark theme faq section end
 /*----------------------------------------------
-end
+Faq end
 ----------------------------------------------*/
 
 /*----------------------------------------------
-09. Blog section start
+10. Blog section start
 ----------------------------------------------*/
-
 .blog-section {
     background-color: var(--bg-color1);
 }
@@ -2625,7 +2370,7 @@ end
 .blog-box {
     background: var(--white);
     border-radius: 15px;
-    box-shadow: var(--shadow4);
+    box-shadow: var(--shadow3);
 
     &:hover {
         .img-box {
@@ -2737,142 +2482,10 @@ end
 }
 
 // Blog responsive end
-// Dark theme blog section start
-.dark-theme {
-    .blog-section {
-        background: var(--bg-color3);
-
-        .blog-box {
-            background-color: var(--bg-color4);
-            box-shadow: var(--shadow2);
-
-            .blog-author .author-info span {
-                color: var(--grayish-blue);
-            }
-        }
-    }
-
-}
-
-// Dark theme blog section end
 /*----------------------------------------------
-end
+Blog end
 ----------------------------------------------*/
 
-/*----------------------------------------------
-10. Newsletter section start
-----------------------------------------------*/
-
-.newsletter-area {
-    .Newslatter-title {
-        // color: var(--white);
-        font-weight: 500;
-    }
-}
-
-.subscribe-form {
-    position: relative;
-    width: 100%;
-    border-radius: 50px;
-
-    input {
-        text-transform: capitalize;
-        height: 100%;
-        border-radius: 50px;
-        padding: 0 65px 0 30px;
-        font-size: 18px;
-        width: 100%;
-        outline: 0;
-        border: 1px solid transparent;
-        background: var(--white);
-        caret-color: var(--primary-color);
-        height: 61px;
-
-        &:focus {
-            border: 1px solid var(--primary-color);
-        }
-    }
-
-    button {
-        background: linear-gradient(180deg, #FFF .51%, #C5CADD 97.86%);
-        box-shadow: 0px 1px 0 #9da9cd, 0 2px 4px rgba(9, 30, 66, .6);
-        color: var(--primary-color);
-        font-size: 18px;
-        height: 100%;
-        border: none;
-        cursor: pointer;
-        transition: var(--transition);
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 60px;
-        width: 60px;
-        border-radius: 50px;
-        outline: 0;
-
-        &:hover {
-            box-shadow: 0 1px 0 #9DA9CD, 0 6px 12px rgba(9, 30, 66, .2);
-        }
-
-        i {
-            font-size: 20px;
-        }
-    }
-}
-
-// Newslatter responsive start
-@media (max-width: 767px) {
-    .newsletter-area {
-        text-align: center;
-    }
-}
-
-@media (max-width: 575px) {
-    .subscribe-form {
-        input {
-            height: 41px;
-            padding: 0 45px 0 30px;
-            font-size: 14px;
-        }
-
-        button {
-            height: 40px;
-            width: 40px;
-        }
-    }
-
-
-}
-
-// Newslatter responsive end
-
-// Newslatter rtl start
-.rtl .subscribe-form {
-    input {
-        padding: 0 30px 0 65px;
-    }
-
-    button {
-        left: 0;
-        right: auto;
-
-        i {
-            transform: rotate(180deg);
-        }
-    }
-}
-
-@media (max-width: 575px) {
-    .rtl .subscribe-form input {
-        padding: 0 30px 0 45px;
-    }
-}
-
-// Newslatter rtl end
-
-/*----------------------------------------------
-end
-----------------------------------------------*/
 
 /*----------------------------------------------
 11. Footer section start
@@ -2946,7 +2559,7 @@ end
 // Footer rtl end
 
 /*----------------------------------------------
-end
+Footer end
 ----------------------------------------------*/
 
 /*----------------------------------------------
@@ -2975,13 +2588,12 @@ end
 
 
 /*----------------------------------------------
-end
+Copyright end
 ----------------------------------------------*/
 
 /*----------------------------------------------
 13. Banner section start
 ----------------------------------------------*/
-
 .banner-nav {
     background: transparent;
 }
@@ -3026,23 +2638,13 @@ end
 }
 
 // Responsive banner section end
-// Dark theme banner section start
-.dark-theme {
-    .banner-area {
-        background: var(--bg-color5);
-    }
 
-    .banner-area h3 {
-        color: var(--white);
-    }
-}
-
-// Dark theme banner section end
 /*----------------------------------------------
-end
+Banner end
 ----------------------------------------------*/
+
 /*----------------------------------------------
-Docs banner section start
+14. Docs banner section start
 ----------------------------------------------*/
 .docs-banner {
     padding: 100px 0 150px;
@@ -3052,10 +2654,11 @@ Docs banner section start
 }
 
 /*----------------------------------------------
-end
+Docs banner end
 ----------------------------------------------*/
+
 /*----------------------------------------------
-Developer section start
+15. Developer section start
 ----------------------------------------------*/
 .developer-section {
     background-color: var(--bg-color1);
@@ -3068,7 +2671,7 @@ Developer section start
 .docs-card {
     background-color: var(--white);
     border-radius: 15px;
-    box-shadow: var(--shadow4);
+    box-shadow: var(--shadow3);
     transition: var(--transition);
 
     &:hover {
@@ -3089,11 +2692,11 @@ Developer section start
 }
 
 /*----------------------------------------------
-end
+Developer end
 ----------------------------------------------*/
 
 /*----------------------------------------------
-Docs section start 
+16. Docs section start 
 ----------------------------------------------*/
 .docs-nav {
     box-shadow: var(--shadow2);
@@ -3384,14 +2987,23 @@ main {
     }
 }
 
+@media (max-width: 575px) {
+    main {
+        .main-inner {
+            padding: 20px;
+        }
+    }
+
+}
+
 // Responsive docs section start
 /*----------------------------------------------
-end 
+Docs end 
 ----------------------------------------------*/
 
 
 /*----------------------------------------------
-14. Contact section start
+17. Contact section start
 ----------------------------------------------*/
 .contact-section {
     background-color: var(--bg-color1);
@@ -3399,7 +3011,7 @@ end
     .contact-inner {
         background-color: var(--white);
         border-radius: 20px;
-        padding: 10px;
+        padding: 15px;
     }
 
     .contact-message-area {
@@ -3427,7 +3039,7 @@ end
         }
 
         p {
-            color: var(--grayish-blue);
+            color: rgba(255, 255, 255, 0.75);
         }
 
 
@@ -3445,41 +3057,14 @@ end
 }
 
 // Contact rtl end
-// Dark theme contact section start 
-.dark-theme {
-    .contact-section {
-        background: var(--bg-color3);
 
-        .contact-message-area {
-            background-color: var(--bg-color4);
-        }
-    }
-}
-
-// Dark theme contact section end
 /*----------------------------------------------
-end
+Contact end
 ----------------------------------------------*/
 
-/*----------------------------------------------
-15. Map section start
-----------------------------------------------*/
-
-.map-section {
-    margin-bottom: -15px;
-
-    iframe {
-        width: 100%;
-        height: 450px;
-    }
-}
 
 /*----------------------------------------------
-end
-----------------------------------------------*/
-
-/*----------------------------------------------
-16. Login Signup section start
+18. Login Signup section start
 ----------------------------------------------*/
 .login-signup-page {
     background-color: var(--bg-color1);
@@ -3488,6 +3073,18 @@ end
         background-color: var(--white);
         padding: 30px 20px;
         border-radius: 15px;
+
+        .password-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            .password-icon {
+                position: absolute;
+                right: 15px;
+                cursor: pointer;
+            }
+        }
 
         .cmn-btn {
             height: 45px;
@@ -3533,21 +3130,13 @@ end
 }
 
 // Rtl login signup page end
-// Dark theme login signup section start
-.dark-theme {
-    .login-signup-page {
-        background: var(--bg-color4);
-    }
-}
-
-// Dark theme login signup section end
 
 /*----------------------------------------------
-end
+Login Signup end
 ----------------------------------------------*/
 
 /*----------------------------------------------
-17. Blog details section start
+19. Blog details section start
 ----------------------------------------------*/
 .blog-details-section {
 
@@ -3627,11 +3216,13 @@ end
         box-shadow: var(--shadow2);
         border-radius: 8px;
         margin-top: 20px;
-        .categories-header{
-            .categories-header{
+
+        .categories-header {
+            .categories-header {
                 margin-bottom: 20px;
             }
         }
+
         li {
             border-bottom: 1px solid var(--border-color2);
             padding: 10px 0;
@@ -3733,58 +3324,13 @@ end
 }
 
 // Blog details rtl end
-// Dark theme blog details section start 
-.dark-theme {
-    .blog-details-section {
-        background: var(--bg-color3);
 
-        .blog-sidebar {
-            background: var(--bg-color4);
-        }
-
-        .blog-sidebar {
-            .form-control {
-                background: var(--bg-color6);
-            }
-
-            .blog-widget-area {
-                .blog-widget-item {
-                    background: var(--bg-color6);
-                }
-
-                .blog-widget-content .blog-title {
-                    color: var(--white);
-
-                    &:hover {
-                        color: var(--primary-color);
-                    }
-                }
-            }
-        }
-
-        .categories-area {
-            background: var(--bg-color6);
-
-            li a {
-                color: var(--white);
-
-                &:hover {
-                    color: var(--primary-color);
-                }
-            }
-        }
-    }
-
-
-}
-
-// Dark theme blog details section end
 /*----------------------------------------------
-end
+Blog details end
 ----------------------------------------------*/
 
 /*----------------------------------------------
-18. Pagination section start
+20. Pagination section start
 ----------------------------------------------*/
 .pagination-section {
     margin-top: 50px;
@@ -3832,41 +3378,13 @@ end
 }
 
 // Pagination rtl end
-// Dark theme paginaiton start
-.dark-theme {
-    .pagination-section nav {
-        background-color: var(--bg-color4);
 
-        .pagination {
-            .page-item {
-                .page-link {
-                    background: var(--bg-color6);
-                    border: 1px solid var(--bg-color3);
-                    color: var(--white);
-
-                    &:hover,
-                    &:focus {
-                        background: var(--primary-color);
-                    }
-                }
-
-                &.active .page-link {
-                    background: var(--primary-color);
-                }
-            }
-        }
-    }
-
-
-}
-
-// Dark theme paginaiton end
 /*----------------------------------------------
-end
+Pagination end
 ----------------------------------------------*/
 
 /*----------------------------------------------
-Error section start
+21. Error section start
 ----------------------------------------------*/
 .error-section {
     height: 100vh;
@@ -3942,5 +3460,5 @@ Error section start
 
 // Responsive error section end
 /*----------------------------------------------
-end
+Error end
 ----------------------------------------------*/

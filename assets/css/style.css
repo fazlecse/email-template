@@ -12,19 +12,22 @@ Version       : 1.0
 03. Hero section start
 04. Feature section start
 05. About section start
-06. How it works section start
+06. Pricing section start
 07. Testimonial section start
-08. Faq section start
-09. Blog section start
-10. Newsletter section start
+08. How it works section start
+09. Faq section start
+10. Blog section start
 11. Footer section start
 12. Copyright section start
 13. Banner section start
-14. Contact section start
-15. Map section start
-16. Login Signup section start
-17. Blog details section start
-18. Pagination section start
+14. Docs banner section start
+15. Developer section start
+16. Docs section start 
+17. Contact section start
+18. Login Signup section start
+19. Blog details section start
+20. Pagination section start
+21. Error section start
 ----------------------------------------------*/
 /*----------------------------------------------
 Typography 
@@ -59,67 +62,8 @@ Typography
   --border-color3: rgb(51, 104, 250, 0.5);
   --shadow1: 0px 3px 5px 0px rgba(0, 0, 0, 0.10);
   --shadow2: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
-  --shadow4: 5px 5px 20px rgba(54, 97, 252, .15);
+  --shadow3: 5px 5px 20px rgba(54, 97, 252, .15);
   --transition: all .3s ease-in-out;
-}
-
-.dark-theme {
-  background-color: var(--bg-color3);
-}
-.dark-theme h1,
-.dark-theme h2,
-.dark-theme h3,
-.dark-theme h4,
-.dark-theme h5,
-.dark-theme h6 {
-  color: var(--white);
-}
-.dark-theme p {
-  color: var(--grayish-blue);
-}
-.dark-theme .form-control,
-.dark-theme .form-select {
-  color: var(--white);
-  border: 1px solid var(--bg-color3);
-  background-color: var(--bg-color3);
-}
-.dark-theme .form-control:focus,
-.dark-theme .form-select:focus {
-  border: 1px solid var(--primary-color);
-}
-.dark-theme .form-control::-moz-placeholder, .dark-theme .form-select::-moz-placeholder {
-  color: var(--white);
-}
-.dark-theme .form-control::placeholder,
-.dark-theme .form-select::placeholder {
-  color: var(--white);
-}
-.dark-theme .form-select {
-  background-image: url(../images/accordion/dark-down-arrow.png);
-}
-.dark-theme .input-group-text {
-  background: var(--bg-color4);
-}
-.dark-theme .search-form button {
-  color: var(--white);
-}
-.dark-theme .login-btn {
-  color: var(--white);
-}
-.dark-theme hr.divider:after {
-  background-color: var(--bg-color4);
-  color: var(--white);
-}
-.dark-theme .icon-box {
-  background-color: var(--bg-color6);
-}
-.dark-theme .feedback-inner-item .ratings {
-  background: var(--bg-color4);
-}
-.dark-theme .cmn-btn3 {
-  background: var(--bg-color6);
-  border: 1px solid var(--bg-color3);
-  color: var(--white);
 }
 
 /*----------------------------------------------
@@ -148,10 +92,6 @@ preloader start
   height: 100vh;
   background: var(--white) url(../images/preloader/preloader.gif) no-repeat center;
   z-index: 99999;
-}
-
-.dark-theme #preloader {
-  background: var(--bg-color3) url(../images/preloader/preloader-darktheme.gif) no-repeat center;
 }
 
 /*----------------------------------------------
@@ -442,7 +382,7 @@ h1 {
   font-size: 58px;
   margin-bottom: 25px;
   font-weight: 500;
-  line-height: 70px;
+  line-height: 60px;
 }
 
 h2 {
@@ -464,6 +404,11 @@ h3 {
   font-weight: 500;
 }
 
+@media (max-width: 991px) {
+  h3 {
+    font-size: 24px;
+  }
+}
 h4 {
   font-size: 24px;
   margin-bottom: 5px;
@@ -590,15 +535,6 @@ Offcanvaes section start
   opacity: 1;
 }
 
-#sun {
-  display: none;
-}
-
-.dark-theme .offcanvas.offcanvas-end {
-  background-color: var(--bg-color6);
-  border-left: 1px solid var(--bg-color3);
-}
-
 /*----------------------------------------------
 end 
 ----------------------------------------------*/
@@ -622,7 +558,7 @@ end
 .shape {
   position: absolute;
   background-color: var(--white);
-  box-shadow: var(--shadow4);
+  box-shadow: var(--shadow3);
   padding: 15px;
   border-radius: 10px;
   text-transform: capitalize;
@@ -640,13 +576,11 @@ end
 }
 
 .shape1 {
-  position: absolute;
   top: 50px;
   left: -70px;
 }
 
 .shape2 {
-  position: absolute;
   bottom: 50px;
   right: -70px;
 }
@@ -654,21 +588,32 @@ end
   color: var(--yellow);
 }
 
-.shape3 {
-  position: absolute;
-  top: 240px;
-  left: 365px;
-  z-index: -1;
+@media (max-width: 991px) {
+  .shape .icon-area img {
+    width: 40px;
+    height: 40px;
+  }
+  .shape h4 {
+    font-size: 16px;
+  }
+  .shape span {
+    font-size: 12px;
+  }
+  .shape1 {
+    left: -25px;
+  }
+  .shape2 {
+    right: -25px;
+  }
 }
-
-.shape4 {
-  position: absolute;
-  top: 285px;
-  left: 385px;
-  z-index: -1;
-  max-width: 175px;
+@media (max-width: 370px) {
+  .shape1 {
+    left: -7px;
+  }
+  .shape2 {
+    right: -7px;
+  }
 }
-
 .section-header {
   margin-bottom: 30px;
 }
@@ -995,6 +940,11 @@ section {
   background-color: var(--primary-color-opacity-low);
 }
 
+@media (max-width: 991px) {
+  .section-subtitle {
+    font-size: 16px;
+  }
+}
 .social-area ul li a {
   width: 40px;
   height: 40px;
@@ -1005,7 +955,7 @@ section {
   border-radius: 10px;
   background: var(--white);
   color: var(--heading-color);
-  box-shadow: var(--shadow4);
+  box-shadow: var(--shadow3);
 }
 .social-area ul li a:hover {
   background-color: var(--primary-color);
@@ -1067,7 +1017,7 @@ hr.divider:after {
   position: relative;
   top: -12px;
   padding: 0 16px;
-  background: #F8F4FA;
+  background: var(--white);
   color: var(--heading-color);
 }
 
@@ -1432,10 +1382,6 @@ end
   z-index: 9999;
 }
 
-.transparent-nav.active .nav-link {
-  color: var(--black) !important;
-}
-
 .navbar {
   transition: all 0.5s ease-in-out;
   padding: 0;
@@ -1543,27 +1489,15 @@ end
 }
 .rtl .navbar .nav-right li:not(:last-child) {
   margin-right: 0;
-  margin-left: 10px;
+  margin-left: 15px;
 }
-
-.dark-theme .navbar.active {
-  background-color: var(--bg-color6);
-}
-.dark-theme .navbar .navbar-nav .nav-link {
-  color: var(--white);
-}
-.dark-theme .navbar .navbar-nav .nav-link.active {
-  color: var(--primary-color);
-}
-.dark-theme .navbar .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
-}
-.dark-theme .nav-right li .toggle-btn {
-  color: var(--white);
+.rtl .navbar .nav-right li .link i {
+  margin-right: 0;
+  margin-left: 5px;
 }
 
 /*----------------------------------------------
-end
+Nav end
 ----------------------------------------------*/
 /*----------------------------------------------
 02. Bottom Mobile, Tab nav section start
@@ -1598,18 +1532,8 @@ end
   font-size: 20px;
 }
 
-.dark-theme .bottom-nav {
-  background-color: var(--bg-color6);
-}
-.dark-theme .bottom-nav .nav-item .nav-link {
-  color: var(--white);
-}
-
 /*----------------------------------------------
-end
-----------------------------------------------*/
-/*----------------------------------------------
-end
+Bottom Mobile, Tab nav end
 ----------------------------------------------*/
 /*----------------------------------------------
 03. Hero section start
@@ -1671,12 +1595,8 @@ end
   transform: rotate(180deg);
 }
 
-.dark-theme .hero-section {
-  background: var(--bg-color3);
-}
-
 /*----------------------------------------------
-end
+Hero end
 ----------------------------------------------*/
 /*----------------------------------------------
 04. Feature section start
@@ -1714,7 +1634,7 @@ end
   width: 70px;
   min-width: 70px;
   height: 70px;
-  box-shadow: var(--shadow4);
+  box-shadow: var(--shadow3);
   border-radius: 50px;
   color: var(--primary-color);
   font-size: 26px;
@@ -1746,9 +1666,17 @@ end
     font-size: 22px;
   }
 }
-.rtl .feature-box.ms-lg-4 {
+@media (max-width: 767px) {
+  .feature-box {
+    max-width: 100%;
+  }
+}
+.rtl .feature-box-right .icon-box {
+  margin-right: 20px;
   margin-left: 0;
-  margin-right: 24px;
+}
+.rtl .feature-box-right .text-box {
+  text-align: left;
 }
 .rtl .icon-box {
   margin-right: 0;
@@ -1760,12 +1688,8 @@ end
   }
 }
 
-.dark-theme .feature-section {
-  background: var(--bg-color4);
-}
-
 /*----------------------------------------------
-end
+Feature end
 ----------------------------------------------*/
 /*----------------------------------------------
 05. About section start
@@ -1786,12 +1710,8 @@ end
   text-align: right;
 }
 
-.dark-theme .about-section {
-  background: var(--bg-color3);
-}
-
 /*----------------------------------------------
-end
+About end
 ----------------------------------------------*/
 /*----------------------------------------------
 06. Pricing section start
@@ -1895,52 +1815,6 @@ end
   border-color: var(--primary-color);
 }
 
-.prepaid-plan .section-body {
-  display: flex;
-  justify-content: space-between;
-  padding: initial;
-}
-.prepaid-plan .price-area {
-  padding: 15px;
-  background-color: var(--black);
-  color: var(--white);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  width: 35%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.prepaid-plan .price-area .price-title {
-  font-size: 40px;
-  font-family: var(--heading-font);
-  font-weight: 700;
-}
-.prepaid-plan .content-details {
-  padding: 15px;
-}
-.prepaid-plan .prepaid-title {
-  font-size: 22px;
-  font-weight: 600;
-  font-family: var(--heading-font);
-}
-.prepaid-plan sup {
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: var(--grayish-blue);
-}
-.prepaid-plan .prepaid-info {
-  margin-bottom: 0;
-  color: var(--grayish-blue);
-}
-.prepaid-plan .prepaid-info .highlight {
-  font-weight: 600;
-}
-.prepaid-plan .btn-area {
-  padding: 15px;
-}
-
 @media (max-width: 1199px) {
   .prepaid-plan .prepaid-title {
     font-size: 20px;
@@ -1957,26 +1831,13 @@ end
     font-size: 18px;
   }
 }
-@media (max-width: 480px) {
-  .prepaid-plan .section-body {
-    flex-direction: column;
-    text-align: center;
-  }
-  .prepaid-plan .section-body .price-area {
-    width: 100%;
-    border-radius: 10px;
-  }
-}
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .cmn-tabs .nav-pills {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
   .cmn-tabs .nav-pills .nav-item {
-    width: 100%;
-  }
-  .cmn-tabs .nav-pills .nav-item .nav-link {
     width: 100%;
   }
 }
@@ -1992,35 +1853,7 @@ end
 }
 
 /*----------------------------------------------
-end
-----------------------------------------------*/
-/*----------------------------------------------
-06. How it works section start
-----------------------------------------------*/
-.how-it-work {
-  background-color: var(--bg-color1);
-}
-.how-it-work .how-it-work-content .btn-area {
-  margin-top: 30px;
-}
-
-@media (max-width: 767px) {
-  .how-it-work .btn-area {
-    display: flex;
-    justify-content: center;
-  }
-}
-.rtl .how-it-work .how-it-work-wrapper .how-it-work-item .section-header .number {
-  margin-right: 0;
-  margin-left: 15px;
-}
-
-.dark-theme .how-it-work {
-  background: var(--bg-color4);
-}
-
-/*----------------------------------------------
-end
+Pricing end
 ----------------------------------------------*/
 /*----------------------------------------------
 07. Testimonial section start
@@ -2064,15 +1897,35 @@ end
   margin-top: 50px;
 }
 
-.dark-theme .testimonial-section {
-  background: var(--bg-color3);
+/*----------------------------------------------
+Testimonial end
+----------------------------------------------*/
+/*----------------------------------------------
+08. How it works section start
+----------------------------------------------*/
+.how-it-work {
+  background-color: var(--bg-color1);
+}
+.how-it-work .how-it-work-content .btn-area {
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .how-it-work .btn-area {
+    display: flex;
+    justify-content: center;
+  }
+}
+.rtl .how-it-work .how-it-work-wrapper .how-it-work-item .section-header .number {
+  margin-right: 0;
+  margin-left: 15px;
 }
 
 /*----------------------------------------------
-end
+How it works end
 ----------------------------------------------*/
 /*----------------------------------------------
-08. Faq section start
+09. Faq section start
 ----------------------------------------------*/
 .faq-section .accordion-button {
   color: var(--heading-color);
@@ -2131,24 +1984,11 @@ end
   margin-left: 0;
 }
 
-.dark-theme .faq-section {
-  background: var(--bg-color4);
-}
-.dark-theme .faq-section .accordion-button {
-  color: var(--white);
-}
-.dark-theme .faq-section .accordion-button:not(.collapsed) {
-  color: var(--primary-color);
-}
-.dark-theme .faq-section .accordion-item {
-  border-bottom: 1px solid var(--border-color4);
-}
-
 /*----------------------------------------------
-end
+Faq end
 ----------------------------------------------*/
 /*----------------------------------------------
-09. Blog section start
+10. Blog section start
 ----------------------------------------------*/
 .blog-section {
   background-color: var(--bg-color1);
@@ -2161,7 +2001,7 @@ end
 .blog-box {
   background: var(--white);
   border-radius: 15px;
-  box-shadow: var(--shadow4);
+  box-shadow: var(--shadow3);
 }
 .blog-box:hover .img-box {
   overflow: hidden;
@@ -2237,106 +2077,8 @@ end
   margin-left: 10px;
 }
 
-.dark-theme .blog-section {
-  background: var(--bg-color3);
-}
-.dark-theme .blog-section .blog-box {
-  background-color: var(--bg-color4);
-  box-shadow: var(--shadow2);
-}
-.dark-theme .blog-section .blog-box .blog-author .author-info span {
-  color: var(--grayish-blue);
-}
-
 /*----------------------------------------------
-end
-----------------------------------------------*/
-/*----------------------------------------------
-10. Newsletter section start
-----------------------------------------------*/
-.newsletter-area .Newslatter-title {
-  font-weight: 500;
-}
-
-.subscribe-form {
-  position: relative;
-  width: 100%;
-  border-radius: 50px;
-}
-.subscribe-form input {
-  text-transform: capitalize;
-  height: 100%;
-  border-radius: 50px;
-  padding: 0 65px 0 30px;
-  font-size: 18px;
-  width: 100%;
-  outline: 0;
-  border: 1px solid transparent;
-  background: var(--white);
-  caret-color: var(--primary-color);
-  height: 61px;
-}
-.subscribe-form input:focus {
-  border: 1px solid var(--primary-color);
-}
-.subscribe-form button {
-  background: linear-gradient(180deg, #FFF 0.51%, #C5CADD 97.86%);
-  box-shadow: 0px 1px 0 #9da9cd, 0 2px 4px rgba(9, 30, 66, 0.6);
-  color: var(--primary-color);
-  font-size: 18px;
-  height: 100%;
-  border: none;
-  cursor: pointer;
-  transition: var(--transition);
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 60px;
-  width: 60px;
-  border-radius: 50px;
-  outline: 0;
-}
-.subscribe-form button:hover {
-  box-shadow: 0 1px 0 #9DA9CD, 0 6px 12px rgba(9, 30, 66, 0.2);
-}
-.subscribe-form button i {
-  font-size: 20px;
-}
-
-@media (max-width: 767px) {
-  .newsletter-area {
-    text-align: center;
-  }
-}
-@media (max-width: 575px) {
-  .subscribe-form input {
-    height: 41px;
-    padding: 0 45px 0 30px;
-    font-size: 14px;
-  }
-  .subscribe-form button {
-    height: 40px;
-    width: 40px;
-  }
-}
-.rtl .subscribe-form input {
-  padding: 0 30px 0 65px;
-}
-.rtl .subscribe-form button {
-  left: 0;
-  right: auto;
-}
-.rtl .subscribe-form button i {
-  transform: rotate(180deg);
-}
-
-@media (max-width: 575px) {
-  .rtl .subscribe-form input {
-    padding: 0 30px 0 45px;
-  }
-}
-/*----------------------------------------------
-end
+Blog end
 ----------------------------------------------*/
 /*----------------------------------------------
 11. Footer section start
@@ -2391,7 +2133,7 @@ end
 }
 
 /*----------------------------------------------
-end
+Footer end
 ----------------------------------------------*/
 /*----------------------------------------------
 12. Copyright section start
@@ -2409,7 +2151,7 @@ end
 }
 
 /*----------------------------------------------
-end
+Copyright end
 ----------------------------------------------*/
 /*----------------------------------------------
 13. Banner section start
@@ -2451,18 +2193,11 @@ end
     font-size: 36px;
   }
 }
-.dark-theme .banner-area {
-  background: var(--bg-color5);
-}
-.dark-theme .banner-area h3 {
-  color: var(--white);
-}
-
 /*----------------------------------------------
-end
+Banner end
 ----------------------------------------------*/
 /*----------------------------------------------
-Docs banner section start
+14. Docs banner section start
 ----------------------------------------------*/
 .docs-banner {
   padding: 100px 0 150px;
@@ -2472,10 +2207,10 @@ Docs banner section start
 }
 
 /*----------------------------------------------
-end
+Docs banner end
 ----------------------------------------------*/
 /*----------------------------------------------
-Developer section start
+15. Developer section start
 ----------------------------------------------*/
 .developer-section {
   background-color: var(--bg-color1);
@@ -2487,7 +2222,7 @@ Developer section start
 .docs-card {
   background-color: var(--white);
   border-radius: 15px;
-  box-shadow: var(--shadow4);
+  box-shadow: var(--shadow3);
   transition: var(--transition);
 }
 .docs-card:hover {
@@ -2504,10 +2239,10 @@ Developer section start
 }
 
 /*----------------------------------------------
-end
+Developer end
 ----------------------------------------------*/
 /*----------------------------------------------
-Docs section start 
+16. Docs section start 
 ----------------------------------------------*/
 .docs-nav {
   box-shadow: var(--shadow2);
@@ -2755,11 +2490,16 @@ main .editor-side .language-bash {
     left: 0;
   }
 }
+@media (max-width: 575px) {
+  main .main-inner {
+    padding: 20px;
+  }
+}
 /*----------------------------------------------
-end 
+Docs end 
 ----------------------------------------------*/
 /*----------------------------------------------
-14. Contact section start
+17. Contact section start
 ----------------------------------------------*/
 .contact-section {
   background-color: var(--bg-color1);
@@ -2767,7 +2507,7 @@ end
 .contact-section .contact-inner {
   background-color: var(--white);
   border-radius: 20px;
-  padding: 10px;
+  padding: 15px;
 }
 .contact-section .contact-message-area {
   padding: 20px;
@@ -2789,7 +2529,7 @@ end
   color: var(--white);
 }
 .contact-section .contact-area p {
-  color: var(--grayish-blue);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .rtl .contact-section .contact-area {
@@ -2797,32 +2537,11 @@ end
   border-top-left-radius: 200px;
 }
 
-.dark-theme .contact-section {
-  background: var(--bg-color3);
-}
-.dark-theme .contact-section .contact-message-area {
-  background-color: var(--bg-color4);
-}
-
 /*----------------------------------------------
-end
+Contact end
 ----------------------------------------------*/
 /*----------------------------------------------
-15. Map section start
-----------------------------------------------*/
-.map-section {
-  margin-bottom: -15px;
-}
-.map-section iframe {
-  width: 100%;
-  height: 450px;
-}
-
-/*----------------------------------------------
-end
-----------------------------------------------*/
-/*----------------------------------------------
-16. Login Signup section start
+18. Login Signup section start
 ----------------------------------------------*/
 .login-signup-page {
   background-color: var(--bg-color1);
@@ -2831,6 +2550,16 @@ end
   background-color: var(--white);
   padding: 30px 20px;
   border-radius: 15px;
+}
+.login-signup-page .login-signup-form .password-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.login-signup-page .login-signup-form .password-box .password-icon {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
 }
 .login-signup-page .login-signup-form .cmn-btn {
   height: 45px;
@@ -2862,15 +2591,11 @@ end
   margin-right: 0;
 }
 
-.dark-theme .login-signup-page {
-  background: var(--bg-color4);
-}
-
 /*----------------------------------------------
-end
+Login Signup end
 ----------------------------------------------*/
 /*----------------------------------------------
-17. Blog details section start
+19. Blog details section start
 ----------------------------------------------*/
 .blog-details-section .blog-details .thum-inner {
   position: relative;
@@ -3011,39 +2736,11 @@ end
   border-bottom-left-radius: 0;
 }
 
-.dark-theme .blog-details-section {
-  background: var(--bg-color3);
-}
-.dark-theme .blog-details-section .blog-sidebar {
-  background: var(--bg-color4);
-}
-.dark-theme .blog-details-section .blog-sidebar .form-control {
-  background: var(--bg-color6);
-}
-.dark-theme .blog-details-section .blog-sidebar .blog-widget-area .blog-widget-item {
-  background: var(--bg-color6);
-}
-.dark-theme .blog-details-section .blog-sidebar .blog-widget-area .blog-widget-content .blog-title {
-  color: var(--white);
-}
-.dark-theme .blog-details-section .blog-sidebar .blog-widget-area .blog-widget-content .blog-title:hover {
-  color: var(--primary-color);
-}
-.dark-theme .blog-details-section .categories-area {
-  background: var(--bg-color6);
-}
-.dark-theme .blog-details-section .categories-area li a {
-  color: var(--white);
-}
-.dark-theme .blog-details-section .categories-area li a:hover {
-  color: var(--primary-color);
-}
-
 /*----------------------------------------------
-end
+Blog details end
 ----------------------------------------------*/
 /*----------------------------------------------
-18. Pagination section start
+20. Pagination section start
 ----------------------------------------------*/
 .pagination-section {
   margin-top: 50px;
@@ -3078,26 +2775,11 @@ end
   transform: rotate(180deg);
 }
 
-.dark-theme .pagination-section nav {
-  background-color: var(--bg-color4);
-}
-.dark-theme .pagination-section nav .pagination .page-item .page-link {
-  background: var(--bg-color6);
-  border: 1px solid var(--bg-color3);
-  color: var(--white);
-}
-.dark-theme .pagination-section nav .pagination .page-item .page-link:hover, .dark-theme .pagination-section nav .pagination .page-item .page-link:focus {
-  background: var(--primary-color);
-}
-.dark-theme .pagination-section nav .pagination .page-item.active .page-link {
-  background: var(--primary-color);
-}
-
 /*----------------------------------------------
-end
+Pagination end
 ----------------------------------------------*/
 /*----------------------------------------------
-Error section start
+21. Error section start
 ----------------------------------------------*/
 .error-section {
   height: 100vh;
@@ -3153,5 +2835,5 @@ Error section start
   }
 }
 /*----------------------------------------------
-end
+Error end
 ----------------------------------------------*/
