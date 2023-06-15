@@ -37,7 +37,7 @@ Version       : 1.0
 /*----------------------------------------------
 Typography 
 ----------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Prompt:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
     --body-font: 'Prompt', sans-serif;
@@ -175,6 +175,13 @@ body {
     font-size: 16px;
     overflow-x: hidden;
     background-color: var(--white);
+}
+
+@media (max-width: 991px) {
+    body {
+        padding-bottom: 60px;
+    }
+
 }
 
 html {
@@ -1920,7 +1927,8 @@ Hero end
             margin-right: 20px;
             margin-left: 0;
         }
-        .text-box{
+
+        .text-box {
             text-align: left;
         }
     }
@@ -2472,11 +2480,21 @@ Faq end
 // Blog responsive end
 
 // Blog responsive start
-.rtl .blog-box {
-    .blog-author {
-        .author-img {
-            margin-right: 0;
-            margin-left: 10px;
+.rtl {
+    .blog-box {
+        .blog-author {
+            .author-img {
+                margin-right: 0;
+                margin-left: 10px;
+            }
+        }
+
+        .content-box {
+            .cmn-btn i {
+                margin-left: 0;
+                margin-right: 5px;
+                transform: rotate(180deg);
+            }
         }
     }
 }
@@ -2542,14 +2560,6 @@ Blog end
     }
 }
 
-// Footer responsive start
-@media (max-width: 991px) {
-    .footer-section {
-        padding-bottom: 90px;
-    }
-}
-
-// Footer responsive end
 // Footer rtl start
 .rtl .footer-section .footer-widget h5::after {
     right: 0;
@@ -2566,7 +2576,7 @@ Footer end
 12. Copyright section start
 ----------------------------------------------*/
 
-.copy-right-area {
+.copyright-area {
     p {
         margin-bottom: 0;
         font-weight: 400;
@@ -2574,6 +2584,9 @@ Footer end
 }
 
 .language {
+    display: flex;
+    justify-content: end;
+
     a {
 
         &:hover {
@@ -2586,6 +2599,24 @@ Footer end
     }
 }
 
+// Responsive copyright start
+@media (max-width: 575px) {
+    .copyright-area {
+        text-align: center;
+    }
+
+    .language {
+        justify-content: center;
+    }
+}
+
+// Responsive copyright end
+.rtl {
+    .language a:not(:last-child) {
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
 
 /*----------------------------------------------
 Copyright end
@@ -2938,7 +2969,7 @@ main {
             background-color: var(--bg-color3);
             position: sticky;
             top: 0;
-            z-index: 99;
+            z-index: 1;
 
             .editor-title {
                 color: var(--white);
@@ -2997,6 +3028,63 @@ main {
 }
 
 // Responsive docs section start
+// Rtl docs start
+.rtl {
+    .sidebar-section {
+        .nav-area {
+            .nav-link {
+                i.first {
+
+                    margin-right: 0;
+                    margin-left: 5px;
+                }
+
+                i.last {
+                    margin-left: 0;
+                    margin-right: auto;
+                }
+            }
+
+        }
+
+        .nav-item .nav-content {
+            li a i {
+                margin-right: 0;
+                margin-left: 5px;
+            }
+
+            margin-left: 0;
+            margin-right: 30px;
+        }
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .language-bash {
+        .docs-pre {
+            padding: 0 30px 0 0;
+
+        }
+
+        .line-numbers-rows {
+            left: auto;
+            right: 0;
+            border-right: none;
+            border-left: 1px solid #9e9e9e;
+        }
+
+        .copy-code {
+            right: auto;
+            left: 15px;
+        }
+    }
+
+}
+
+// Rtl docs end
 /*----------------------------------------------
 Docs end 
 ----------------------------------------------*/
@@ -3051,10 +3139,7 @@ Docs end
 // Contact responsive end
 
 // Contact rtl start
-.rtl .contact-section .contact-area {
-    border-top-right-radius: 0;
-    border-top-left-radius: 200px;
-}
+
 
 // Contact rtl end
 
@@ -3073,19 +3158,6 @@ Contact end
         background-color: var(--white);
         padding: 30px 20px;
         border-radius: 15px;
-
-        .password-box {
-            position: relative;
-            display: flex;
-            align-items: center;
-
-            .password-icon {
-                position: absolute;
-                right: 15px;
-                cursor: pointer;
-            }
-        }
-
         .cmn-btn {
             height: 45px;
         }
@@ -3101,6 +3173,20 @@ Contact end
                 width: 16px;
             }
         }
+    }
+}
+.password-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .form-control{
+        padding-right: 35px;
+    }
+
+    .password-icon {
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
     }
 }
 
@@ -3124,10 +3210,23 @@ Contact end
 // Responsive login signup end
 
 // Rtl login signup page start
-.rtl .login-signup-page .login-signup-form .cmn-btn-group .btn img {
-    margin-left: 5px;
-    margin-right: 0;
-}
+.rtl{
+    .login-signup-page .login-signup-form .cmn-btn-group .btn img {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+    .password-box{
+        .form-control{
+            padding-right: .75rem;
+            padding-left: 35px;
+        }
+        .password-icon{
+            right: auto;
+            left: 15px;
+        }
+    }
+    
+} 
 
 // Rtl login signup page end
 

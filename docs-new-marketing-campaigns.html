@@ -89,6 +89,26 @@
     </nav>
     <!-- Nav section end -->
 
+    <!-- Bottom Mobile Tab nav section start -->
+    <ul class="nav bottom-nav fixed-bottom d-lg-none">
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasNavbar"
+                href="#offcanvasNavbar" aria-current="page"><i class="fa-light fa-list"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-planet-ringed"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active"><i class="fa-light fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-address-book"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-light fa-user"></i></a>
+        </li>
+    </ul>
+    <!-- Bottom Mobile Tab nav section end -->
 
 
     <!--Sidebar section start-->
@@ -162,8 +182,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i
-                            class="fa-light fa-folder-open first"></i>Feature</a>
+                    <a class="nav-link" href="#"><i class="fa-light fa-folder-open first"></i>Feature</a>
                 </li>
             </ul>
         </nav>
@@ -294,14 +313,14 @@
 
                         </ul>
                     </div>
-                   
+
                 </div>
-                 <div class="editor-content-area">
-                        <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="Node-js" role="tabpanel"
-                                aria-labelledby="Node-js-tab" tabindex="0">
-                                <div class="language-bash">
-                                    <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
+                <div class="editor-content-area">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="Node-js" role="tabpanel"
+                            aria-labelledby="Node-js-tab" tabindex="0">
+                            <div class="language-bash">
+                                <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
 client.setApiKey(process.env.SENDGRID_API_KEY);
                                         
 const data = {
@@ -332,202 +351,206 @@ console.log(response.body);
 console.error(error);
 });
 </code></pre>
-                                    <span class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
-                                    <button onclick="copyTextFunc()" class="copy-code" type="button"><i
-                                            class="fa-regular fa-copy"></i></button>
-                                </div>
+                                <span
+                                    class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
+                                <button onclick="copyTextFunc()" class="copy-code" type="button"><i
+                                        class="fa-regular fa-copy"></i></button>
                             </div>
-                            <div class="tab-pane fade" id="Python" role="tabpanel" aria-labelledby="Python-tab"
-                                tabindex="0">
-                                <div class="language-bash">
-                                    <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
-client.setApiKey(process.env.SENDGRID_API_KEY);
-                                        
-const data = {
-    "contacts": [
-        {
-            "email": "annahamilton@example.org",
-            "custom_fields": {
-            "w1": "coffee",
-            "w33": "42",
-            "e2": "blue"
-        }
-    }
-    ]
-};
-                                        
-const request = {
-url: `/v3/marketing/contacts`,
-method: 'PUT',
-body: data
-}
-                                        
-client.request(request)
-.then(([response, body]) => {
-console.log(response.statusCode);
-console.log(response.body);
-})
-.catch(error => {
-console.error(error);
-});</code></pre>
-                                    <span class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
-                                    <button onclick="copyTextFunc()" class="copy-code" type="button"><i
-                                            class="fa-regular fa-copy"></i></button>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="PHP" role="tabpanel" aria-labelledby="PHP-tab" tabindex="0">
-                                <div class="language-bash">
-                                    <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
-client.setApiKey(process.env.SENDGRID_API_KEY);
-                                        
-const data = {
-    "contacts": [
-        {
-            "email": "annahamilton@example.org",
-            "custom_fields": {
-            "w1": "coffee",
-            "w33": "42",
-            "e2": "blue"
-        }
-    }
-    ]
-};
-                                        
-const request = {
-url: `/v3/marketing/contacts`,
-method: 'PUT',
-body: data
-}
-                                        
-client.request(request)
-.then(([response, body]) => {
-console.log(response.statusCode);
-console.log(response.body);
-})
-.catch(error => {
-console.error(error);
-});</code></pre>
-                                    <span class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
-                                    <button onclick="copyTextFunc()" class="copy-code" type="button"><i
-                                            class="fa-regular fa-copy"></i></button>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="Java" role="tabpanel" aria-labelledby="Java-tab"
-                                tabindex="0">
-                                <div class="language-bash">
-                                    <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
-client.setApiKey(process.env.SENDGRID_API_KEY);
-                                        
-const data = {
-    "contacts": [
-        {
-            "email": "annahamilton@example.org",
-            "custom_fields": {
-            "w1": "coffee",
-            "w33": "42",
-            "e2": "blue"
-        }
-    }
-    ]
-};
-                                        
-const request = {
-url: `/v3/marketing/contacts`,
-method: 'PUT',
-body: data
-}
-                                        
-client.request(request)
-.then(([response, body]) => {
-console.log(response.statusCode);
-console.log(response.body);
-})
-.catch(error => {
-console.error(error);
-});</code></pre>
-                                    <span class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
-                                    <button onclick="copyTextFunc()" class="copy-code" type="button"><i
-                                            class="fa-regular fa-copy"></i></button>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="Go" role="tabpanel" aria-labelledby="Go-tab" tabindex="0">
-                                <div class="language-bash">
-                                    <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
-client.setApiKey(process.env.SENDGRID_API_KEY);
-                                        
-const data = {
-    "contacts": [
-        {
-            "email": "annahamilton@example.org",
-            "custom_fields": {
-            "w1": "coffee",
-            "w33": "42",
-            "e2": "blue"
-        }
-    }
-    ]
-};
-                                        
-const request = {
-url: `/v3/marketing/contacts`,
-method: 'PUT',
-body: data
-}
-                                        
-client.request(request)
-.then(([response, body]) => {
-console.log(response.statusCode);
-console.log(response.body);
-})
-.catch(error => {
-console.error(error);
-});</code></pre>
-                                    <span class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
-                                    <button onclick="copyTextFunc()" class="copy-code" type="button"><i
-                                            class="fa-regular fa-copy"></i></button>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="Ruby" role="tabpanel" aria-labelledby="Ruby-tab"
-                                tabindex="0">
-                                <div class="language-bash">
-                                    <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
-client.setApiKey(process.env.SENDGRID_API_KEY);
-                                        
-const data = {
-    "contacts": [
-        {
-            "email": "annahamilton@example.org",
-            "custom_fields": {
-            "w1": "coffee",
-            "w33": "42",
-            "e2": "blue"
-        }
-    }
-    ]
-};
-                                        
-const request = {
-url: `/v3/marketing/contacts`,
-method: 'PUT',
-body: data
-}
-                                        
-client.request(request)
-.then(([response, body]) => {
-console.log(response.statusCode);
-console.log(response.body);
-})
-.catch(error => {
-console.error(error);
-});</code></pre>
-                                    <span class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
-                                    <button onclick="copyTextFunc()" class="copy-code" type="button"><i
-                                            class="fa-regular fa-copy"></i></button>
-                                </div>
-                            </div>
-
                         </div>
+                        <div class="tab-pane fade" id="Python" role="tabpanel" aria-labelledby="Python-tab"
+                            tabindex="0">
+                            <div class="language-bash">
+                                <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
+client.setApiKey(process.env.SENDGRID_API_KEY);
+                                        
+const data = {
+    "contacts": [
+        {
+            "email": "annahamilton@example.org",
+            "custom_fields": {
+            "w1": "coffee",
+            "w33": "42",
+            "e2": "blue"
+        }
+    }
+    ]
+};
+                                        
+const request = {
+url: `/v3/marketing/contacts`,
+method: 'PUT',
+body: data
+}
+                                        
+client.request(request)
+.then(([response, body]) => {
+console.log(response.statusCode);
+console.log(response.body);
+})
+.catch(error => {
+console.error(error);
+});</code></pre>
+                                <span
+                                    class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
+                                <button onclick="copyTextFunc()" class="copy-code" type="button"><i
+                                        class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="PHP" role="tabpanel" aria-labelledby="PHP-tab" tabindex="0">
+                            <div class="language-bash">
+                                <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
+client.setApiKey(process.env.SENDGRID_API_KEY);
+                                        
+const data = {
+    "contacts": [
+        {
+            "email": "annahamilton@example.org",
+            "custom_fields": {
+            "w1": "coffee",
+            "w33": "42",
+            "e2": "blue"
+        }
+    }
+    ]
+};
+                                        
+const request = {
+url: `/v3/marketing/contacts`,
+method: 'PUT',
+body: data
+}
+                                        
+client.request(request)
+.then(([response, body]) => {
+console.log(response.statusCode);
+console.log(response.body);
+})
+.catch(error => {
+console.error(error);
+});</code></pre>
+                                <span
+                                    class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
+                                <button onclick="copyTextFunc()" class="copy-code" type="button"><i
+                                        class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Java" role="tabpanel" aria-labelledby="Java-tab" tabindex="0">
+                            <div class="language-bash">
+                                <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
+client.setApiKey(process.env.SENDGRID_API_KEY);
+                                        
+const data = {
+    "contacts": [
+        {
+            "email": "annahamilton@example.org",
+            "custom_fields": {
+            "w1": "coffee",
+            "w33": "42",
+            "e2": "blue"
+        }
+    }
+    ]
+};
+                                        
+const request = {
+url: `/v3/marketing/contacts`,
+method: 'PUT',
+body: data
+}
+                                        
+client.request(request)
+.then(([response, body]) => {
+console.log(response.statusCode);
+console.log(response.body);
+})
+.catch(error => {
+console.error(error);
+});</code></pre>
+                                <span
+                                    class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
+                                <button onclick="copyTextFunc()" class="copy-code" type="button"><i
+                                        class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Go" role="tabpanel" aria-labelledby="Go-tab" tabindex="0">
+                            <div class="language-bash">
+                                <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
+client.setApiKey(process.env.SENDGRID_API_KEY);
+                                        
+const data = {
+    "contacts": [
+        {
+            "email": "annahamilton@example.org",
+            "custom_fields": {
+            "w1": "coffee",
+            "w33": "42",
+            "e2": "blue"
+        }
+    }
+    ]
+};
+                                        
+const request = {
+url: `/v3/marketing/contacts`,
+method: 'PUT',
+body: data
+}
+                                        
+client.request(request)
+.then(([response, body]) => {
+console.log(response.statusCode);
+console.log(response.body);
+})
+.catch(error => {
+console.error(error);
+});</code></pre>
+                                <span
+                                    class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
+                                <button onclick="copyTextFunc()" class="copy-code" type="button"><i
+                                        class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="Ruby" role="tabpanel" aria-labelledby="Ruby-tab" tabindex="0">
+                            <div class="language-bash">
+                                <pre class="docs-pre"><code class="docs-code">const client = require('@sendgrid/client');
+client.setApiKey(process.env.SENDGRID_API_KEY);
+                                        
+const data = {
+    "contacts": [
+        {
+            "email": "annahamilton@example.org",
+            "custom_fields": {
+            "w1": "coffee",
+            "w33": "42",
+            "e2": "blue"
+        }
+    }
+    ]
+};
+                                        
+const request = {
+url: `/v3/marketing/contacts`,
+method: 'PUT',
+body: data
+}
+                                        
+client.request(request)
+.then(([response, body]) => {
+console.log(response.statusCode);
+console.log(response.body);
+})
+.catch(error => {
+console.error(error);
+});</code></pre>
+                                <span
+                                    class="line-numbers-rows"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span></span>
+                                <button onclick="copyTextFunc()" class="copy-code" type="button"><i
+                                        class="fa-regular fa-copy"></i></button>
+                            </div>
+                        </div>
+
                     </div>
+                </div>
 
             </div>
         </div>
