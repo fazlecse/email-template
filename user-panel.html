@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ai-content-&-image-enerator-platform</title>
     <!-- Favicon-link -->
-    <link rel="shortcut icon" href="assets/images/logo/chatbot.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo/mail-send.png" type="image/x-icon">
     <!-- Fontawesome-6 Js link -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -29,11 +29,11 @@
 </head>
 
 <body onload="preloder_function()" class="">
-    <!-- Preloader area start -->
+    <!-- Preloader section start -->
     <div id="preloader">
-
+        <div class="loader"></div>
     </div>
-    <!-- Preloader area end -->
+    <!-- Preloader section end -->
 
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
@@ -44,7 +44,7 @@
 
             </a>
             <button onclick="toggleSideMenu()" class="toggle-sidebar-btn d-none d-lg-block"><i
-                    class="fa-regular fa-bars-staggered"></i></button>
+                    class="fa-light fa-list"></i></button>
         </div><!-- End Logo -->
 
         <div class="search-bar">
@@ -146,74 +146,7 @@
 
                 </li><!-- End Notification Nav -->
 
-                <li class="nav-item dropdown">
-
-                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-                        <i class="fa-regular fa-messages"></i>
-                        <span class="badge bg-success badge-number">3</span>
-                    </a><!-- End Messages Icon -->
-
-                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
-                        <li class="dropdown-header">
-                            You have 3 new messages
-                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="message-item">
-                            <a href="#">
-                                <img src="assets/images/user_panel/profile/1.png" alt="" class="rounded-circle">
-                                <div>
-                                    <h4>Maria Hudson</h4>
-                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                                    <p>4 hrs. ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="message-item">
-                            <a href="#">
-                                <img src="assets/images/profile/profile2.jpg" alt="" class="rounded-circle">
-                                <div>
-                                    <h4>Anna Nelson</h4>
-                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                                    <p>6 hrs. ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="message-item">
-                            <a href="#">
-                                <img src="assets/images/profile/profile1.jpg" alt="" class="rounded-circle">
-                                <div>
-                                    <h4>David Muldon</h4>
-                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                                    <p>8 hrs. ago</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-
-                        <li class="dropdown-footer">
-                            <a href="#">Show all messages</a>
-                        </li>
-
-                    </ul><!-- End Messages Dropdown Items -->
-
-                </li><!-- End Messages Nav -->
-
                 <li class="nav-item dropdown pe-3">
-
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
                         <img src="assets/images/user_panel/profile/1.png" alt="Profile" class="rounded-circle">
                         <span class="d-none d-lg-block dropdown-toggle ps-2">John Doe</span>
@@ -284,7 +217,7 @@
     <ul class="nav bottom-nav fixed-bottom d-lg-none">
         <li class="nav-item">
             <a onclick="toggleSideMenu()" class="nav-link toggle-sidebar" aria-current="page"><i
-                    class="fa-regular fa-bars-staggered"></i></a>
+                    class="fa-light fa-list"></i></a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#"><i class="fa-regular fa-shuttle-space"></i></a>
@@ -308,30 +241,7 @@
     <!-- Sidebar section start -->
     <!-------------------------------------------------------->
     <aside id="sidebar" class="sidebar">
-        <div class="progress-area">
-            <div class="progress-header">
-                <div class="icon-box">
-                    <i class="fa-regular fa-gift"></i>
-                </div>
-                <div class="title">
-                    <h4 class="">Standerd</h4>
-                </div>
-            </div>
-            <div class="content-area">
-                <div class="item item1">
-                    <h5 class="mb-0">3,092</h5>
-                    <span>Word left</span>
-                </div>
-                <div class="item item2">
-                    <h5 class="mb-0">1,124</h5>
-                    <span>Image left</span>
-                </div>
-            </div>
-            <div class="upgrade-btn-area">
-                <a href="user-panel-pricing.html" class="btn cmn-btn2"><i class="fa-regular fa-bolt"></i>
-                    Upgraded to Pro</a>
-            </div>
-        </div>
+
         <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item">
                 <a class="nav-link active" href="user-panel.html">
@@ -343,7 +253,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="topics.html">
                     <i class="fa-regular fa-microchip-ai"></i>
-                    <span>topics</span>
+                    <span>Discuss</span>
                 </a>
             </li><!-- End topics Page Nav -->
 
@@ -456,13 +366,8 @@
 
         <div class="pagetitle">
             <h3>Dashboard</h3>
-            <nav>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Dashboard</li>
-                </ol>
-            </nav>
-        </div><!-- End Page Title -->
+        </div>
+        <!-- End Page Title -->
 
         <div class="section dashboard">
             <!-- Left side columns -->
@@ -473,9 +378,7 @@
                     <div class="col-12">
                         <div class="owl-carousel owl-theme carousel-area1">
                             <div class="item card-item">
-                                <!-- Documents Card -->
                                 <div class="card info-card sales-card card1-bg">
-
                                     <div class="card-body">
                                         <h5 class="card-title"><i class="fa-sharp fa-regular fa-file-word"></i>Documents
                                             Created</h5>
@@ -486,13 +389,10 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-                                <!-- End Documents Card -->
                             </div>
                             <div class="item card-item">
-                                <!-- Words Card -->
-                                <div class="card info-card revenue-card card2-bg">
+                                <div class="card">
 
                                     <div class="card-body">
                                         <h5 class="card-title"><i class="fa-regular fa-scroll lime-green"></i> Words
@@ -506,13 +406,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- End Words Card -->
                             </div>
                             <div class="item card-item">
-                                <!-- Images Card -->
-                                <div class="card info-card customers-card card3-bg">
-
-
+                                <div class="card  card3-bg">
                                     <div class="card-body">
                                         <h5 class="card-title"><i class="fa-regular fa-image dark-blue"></i> Images
                                             Created</h5>
@@ -522,15 +418,11 @@
                                                 <h6>195</h6>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
-                                <!-- End Images Card -->
                             </div>
                             <div class="item card-item">
-                                <!-- Customers Card -->
-                                <div class="card info-card customers-card card4-bg">
-
+                                <div class="card  card4-bg">
                                     <div class="card-body">
                                         <h5 class="card-title"><i class="fa-regular fa-cloud-word soft-blue"></i>
                                             topics Used
@@ -544,18 +436,18 @@
 
                                     </div>
                                 </div>
-                                <!-- End Customers Card -->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Tab mobile view carousel start -->
+            <!-- Tab mobile view carousel end -->
+
+            <!-- Dashboard card start -->
             <div class="col-12 d-none d-lg-block">
                 <div class="row g-4">
-                    <!-- Documents Card -->
                     <div class="col-xxl-3 col-sm-6 card-item">
-                        <div class="card info-card sales-card">
+                        <div class="card">
                             <div class="filter">
                                 <a class="icon" href="#" data-bs-toggle="dropdown"><i
                                         class="fa-regular fa-ellipsis"></i></a>
@@ -563,7 +455,6 @@
                                     <li class="dropdown-header text-start">
                                         <h6>Filter</h6>
                                     </li>
-
                                     <li><a class="dropdown-item" href="#">Today</a></li>
                                     <li><a class="dropdown-item" href="#">This Month</a></li>
                                     <li><a class="dropdown-item" href="#">This Year</a></li>
@@ -571,8 +462,7 @@
                             </div>
 
                             <div class="card-body">
-                                <h5 class="card-title"><i class="fa-sharp fa-regular fa-file-word"></i>Documents
-                                    Created</h5>
+                                <h5 class="card-title"><i class="fa-sharp fa-regular fa-file-word"></i>Email Send</h5>
 
                                 <div class="number d-flex align-items-center">
                                     <div>
@@ -582,12 +472,9 @@
                             </div>
 
                         </div>
-                    </div><!-- End Documents Card -->
-
-                    <!-- Words Card -->
+                    </div>
                     <div class="col-xxl-3 col-sm-6 card-item">
-                        <div class="card info-card revenue-card">
-
+                        <div class="card">
                             <div class="filter">
                                 <a class="icon" href="#" data-bs-toggle="dropdown"><i
                                         class="fa-regular fa-ellipsis"></i></a>
@@ -601,7 +488,6 @@
                                     <li><a class="dropdown-item" href="#">This Year</a></li>
                                 </ul>
                             </div>
-
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fa-regular fa-scroll"></i> Words Generated </h5>
 
@@ -613,13 +499,9 @@
                             </div>
 
                         </div>
-                    </div><!-- End Words Card -->
-
-                    <!-- Images Card -->
+                    </div>
                     <div class="col-xxl-3 col-sm-6 card-item">
-
-                        <div class="card info-card customers-card">
-
+                        <div class="card ">
                             <div class="filter">
                                 <a class="icon" href="#" data-bs-toggle="dropdown"><i
                                         class="fa-regular fa-ellipsis"></i></a>
@@ -633,26 +515,18 @@
                                     <li><a class="dropdown-item" href="#">This Year</a></li>
                                 </ul>
                             </div>
-
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fa-regular fa-image"></i> Images Created</h5>
-
                                 <div class="number d-flex align-items-center">
                                     <div>
                                         <h6>195</h6>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-
-                    </div><!-- End Images Card -->
-
-                    <!-- Customers Card -->
+                    </div>
                     <div class="col-xxl-3 col-sm-6 card-item">
-
-                        <div class="card info-card customers-card">
-
+                        <div class="card ">
                             <div class="filter">
                                 <a class="icon" href="#" data-bs-toggle="dropdown"><i
                                         class="fa-regular fa-ellipsis"></i></a>
@@ -660,16 +534,13 @@
                                     <li class="dropdown-header text-start">
                                         <h6>Filter</h6>
                                     </li>
-
                                     <li><a class="dropdown-item" href="#">Today</a></li>
                                     <li><a class="dropdown-item" href="#">This Month</a></li>
                                     <li><a class="dropdown-item" href="#">This Year</a></li>
                                 </ul>
                             </div>
-
                             <div class="card-body">
                                 <h5 class="card-title"><i class="fa-regular fa-cloud-word"></i> topics Used</h5>
-
                                 <div class="number d-flex align-items-center">
                                     <div>
                                         <h6>200</h6>
@@ -678,603 +549,12 @@
 
                             </div>
                         </div>
-
-                    </div><!-- End Customers Card -->
+                    </div>
                 </div>
             </div>
+            <!-- Dashboard card start -->
 
 
-            <div class="row">
-                <!-- topics -->
-                <div class="col-12">
-                    <div class="card mt-lg-5 mt-0">
-                        <div class="card-header border-0">
-                            <h5 class="card-title"><i class="fa-regular fa-stars"></i>Favorite topics </h5>
-                            <p>Need to create a content? We got you covered! Checkout the list of topics that
-                                you can use
-                            </p>
-                        </div>
-                        <div class="card-body">
-                            <div class="template-section d-none d-lg-block">
-                                <div class="row g-4">
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template active">
-                                            <a href="user-panel-topics-blog-section.html" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-message-captions"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Titles</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-message-captions"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">
-                                                Pros & Cons
-                                            </div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-message-captions"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Section</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-line-columns main-icon"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Ideas</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-image"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Titles</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-image"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">
-                                                Pros & Cons
-                                            </div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-image"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Section</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template active">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-image"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Ideas</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-circle-video"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Titles</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-circle-video"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">
-                                                Pros & Cons
-                                            </div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-circle-video"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Section</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-circle-video"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Ideas</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-envelope"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Welcome Email</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template active">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-envelope"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">
-                                                Cold Email
-                                            </div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-envelope"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Follow-Up Email</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-envelope"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Ideas</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- tab mobile view template carousel start -->
-                            <div class="tab-mobile-view--template-carousel-section">
-                                <div class="owl-carousel owl-theme carousel-area2 d-lg-none">
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-message-captions"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">
-                                                Pros & Cons
-                                            </div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template active">
-                                            <a href="user-panel-topics-blog-section.html" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-message-captions"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Titles</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-message-captions"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Section</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-line-columns main-icon"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Ideas</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-image"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Titles</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-image"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">
-                                                Pros & Cons
-                                            </div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-image"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Section</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template active">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-image"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Ideas</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-circle-video"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Titles</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-circle-video"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">
-                                                Pros & Cons
-                                            </div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-circle-video"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Section</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-circle-video"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Ideas</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-envelope"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Welcome Email</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template active">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-envelope"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">
-                                                Cold Email
-                                            </div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-envelope"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Follow-Up Email</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="template">
-                                            <a href="" class="template-link"></a>
-                                            <div class="template-icon-area">
-                                                <div class="item item1">
-                                                    <i class="fa-regular fa-envelope"></i>
-                                                </div>
-                                                <div class="item item2">
-                                                    <a href=""><i class="star fa-regular fa-star"></i></a>
-                                                </div>
-
-                                            </div>
-                                            <div class="template-title">Blog Ideas</div>
-                                            <div>Write the pros and cons of a product, service or website for your
-                                                blog article</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- tab mobile view template carousel end -->
-
-                        </div>
-                    </div>
-
-                </div><!-- End topics -->
-            </div>
         </div>
 
     </main><!-- End #main -->
