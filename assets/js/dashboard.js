@@ -279,7 +279,7 @@ $(".js-example-basic-single").select2({
 
 $(document).ready(function () {
     // owl carousel dashboard card
-    $('.carousel-area1').owlCarousel({
+    $('.carousel-1').owlCarousel({
         loop: true,
         autoplay: false,
         margin: -20,
@@ -299,26 +299,6 @@ $(document).ready(function () {
         }
     });
 
-    // owl carousel template card
-    $('.carousel-area2').owlCarousel({
-        loop: true,
-        autoplay: false,
-        margin: -25,
-        nav: false,
-        dots: false,
-        // rtl:true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 2
-            },
-            768: {
-                items: 3
-            }
-        }
-    });
 
 
 });

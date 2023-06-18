@@ -35,9 +35,8 @@
     </div>
     <!-- Preloader section end -->
 
-    <!-- ======= Header ======= -->
+    <!-- Header section start -->
     <header id="header" class="header fixed-top d-flex align-items-center">
-
         <div class="d-flex align-items-center justify-content-between">
             <a href="user-panel.html" class="logo d-flex align-items-center">
                 <img src="assets/images/logo/logo.png" alt="">
@@ -50,7 +49,8 @@
         <div class="search-bar">
             <form class="search-form d-flex align-items-center" method="POST" action="#">
                 <input type="text" class="form-control" name="query" placeholder="Search" title="Enter search keyword">
-                <button type="submit" title="Search"><i class="fa-regular fa-magnifying-glass"></i></button>
+                <button class="search-btn" type="submit" title="Search"><i
+                        class="fa-regular fa-magnifying-glass"></i></button>
             </form>
         </div><!-- End Search Bar -->
 
@@ -66,8 +66,8 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-                        <i class="fa-regular fa-bell"></i>
-                        <span class="badge bg-primary badge-number">4</span>
+                        <i class="fa-light fa-bell"></i>
+                        <span class="badge badge-number">4</span>
                     </a><!-- End Notification Icon -->
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
@@ -81,7 +81,7 @@
 
                         <li class="notification-item">
                             <a href="">
-                                <i class="fa-regular fa-circle-exclamation text-warning"></i>
+                                <i class="fa-light fa-circle-exclamation text-warning"></i>
                                 <div>
                                     <h4>Lorem Ipsum</h4>
                                     <p>Quae dolorem earum veritatis oditseno</p>
@@ -96,7 +96,7 @@
 
                         <li class="notification-item">
                             <a href="">
-                                <i class="fa-regular fa-circle-xmark text-danger"></i>
+                                <i class="fa-light fa-circle-xmark text-danger"></i>
                                 <div>
                                     <h4>Atque rerum nesciunt</h4>
                                     <p>Quae dolorem earum veritatis oditseno</p>
@@ -111,7 +111,7 @@
 
                         <li class="notification-item">
                             <a href="">
-                                <i class="fa-regular fa-circle-check text-success"></i>
+                                <i class="fa-light fa-circle-check text-success"></i>
                                 <div>
                                     <h4>Sit rerum fuga</h4>
                                     <p>Quae dolorem earum veritatis oditseno</p>
@@ -126,7 +126,7 @@
 
                         <li class="notification-item">
                             <a href="">
-                                <i class="fa-regular fa-circle-info text-primary"></i>
+                                <i class="fa-light fa-circle-info text-primary"></i>
                                 <div>
                                     <h4>Dicta reprehenderit</h4>
                                     <p>Quae dolorem earum veritatis oditseno</p>
@@ -148,14 +148,14 @@
 
                 <li class="nav-item dropdown pe-3">
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="assets/images/user_panel/profile/1.png" alt="Profile" class="rounded-circle">
+                        <img src="assets/images/Person/2.jpg" alt="Profile" class="rounded-circle">
                         <span class="d-none d-lg-block dropdown-toggle ps-2">John Doe</span>
                     </a><!-- End Profile Iamge Icon -->
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header d-flex justify-content-center text-start">
                             <div class="profile-thum">
-                                <img src="assets/images/user_panel/profile/1.png" alt="">
+                                <img src="assets/images/Person/2.jpg" alt="">
                             </div>
                             <div class="profile-content">
                                 <h6>John Doe</h6>
@@ -168,7 +168,7 @@
 
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                                <i class="fa-regular fa-user"></i>
+                                <i class="fa-light fa-user"></i>
                                 <span>My Profile</span>
                             </a>
                         </li>
@@ -178,7 +178,7 @@
 
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                                <i class="fa-sharp fa-regular fa-gear"></i>
+                                <i class="fa-sharp fa-light fa-gear"></i>
                                 <span>Account Settings</span>
                             </a>
                         </li>
@@ -188,7 +188,7 @@
 
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                                <i class="fa-regular fa-circle-question"></i>
+                                <i class="fa-light fa-circle-question"></i>
                                 <span>Need Help?</span>
                             </a>
                         </li>
@@ -198,7 +198,7 @@
 
                         <li>
                             <a class="dropdown-item d-flex align-items-center" href="#">
-                                <i class="fa-regular fa-right-from-bracket"></i>
+                                <i class="fa-light fa-right-from-bracket"></i>
                                 <span>Sign Out</span>
                             </a>
                         </li>
@@ -209,18 +209,17 @@
             </ul>
         </nav><!-- End Icons Navigation -->
 
-    </header><!-- End Header -->
+    </header>
+    <!-- Header section start -->
 
-    <!-------------------------------------------------------->
     <!-- Bottom Mobile Tab nav section start -->
-    <!-------------------------------------------------------->
     <ul class="nav bottom-nav fixed-bottom d-lg-none">
         <li class="nav-item">
             <a onclick="toggleSideMenu()" class="nav-link toggle-sidebar" aria-current="page"><i
                     class="fa-light fa-list"></i></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-regular fa-shuttle-space"></i></a>
+            <a class="nav-link" href="#"><i class="fa-light fa-planet-ringed"></i></a>
         </li>
         <li class="nav-item">
             <a class="nav-link active" href="#"><i class="fa-regular fa-house"></i></a>
@@ -230,70 +229,85 @@
                     class="fa-regular fa-magnifying-glass"></i></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
+            <a class="nav-link" href="#"><i class="fa-light fa-user"></i></a>
         </li>
     </ul>
-    <!-------------------------------------------------------->
     <!-- Bottom Mobile Tab nav section end -->
-    <!-------------------------------------------------------->
 
-    <!-------------------------------------------------------->
     <!-- Sidebar section start -->
-    <!-------------------------------------------------------->
     <aside id="sidebar" class="sidebar">
-
         <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item">
                 <a class="nav-link active" href="user-panel.html">
                     <i class="fa-regular fa-grid"></i>
                     <span>Dashboard</span>
                 </a>
-            </li><!-- End Dashboard Nav -->
+            </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="topics.html">
-                    <i class="fa-regular fa-microchip-ai"></i>
-                    <span>Discuss</span>
+                    <i class="fa-light fa-address-book"></i>
+                    <span>Contact</span>
                 </a>
-            </li><!-- End topics Page Nav -->
+            </li>
 
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-                    <i class="fa-sharp fa-regular fa-file-word"></i><span>Documents</span>
+                    <i class="fa-light fa-paper-plane"></i><span>Email marketing</span>
                     <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
                 </a>
                 <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
                         <a href="user-panel-all-images.html">
-                            <i class="fa-regular fa-circle"></i><span>All Documents</span>
+                            <i class="fa-regular fa-circle"></i><span>Email analytcs</span>
                         </a>
                     </li>
                     <li>
                         <a href="user-panel-all-images.html">
-                            <i class="fa-regular fa-circle"></i><span>All Images</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="forms-editors.html">
-                            <i class="fa-regular fa-circle"></i><span>All Codes</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="user-panel-workbooks.html">
-                            <i class="fa-regular fa-circle"></i><span>Workbooks</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="user-panel-ai-image.html">
-                            <i class="fa-regular fa-circle"></i><span>AI Images</span>
+                            <i class="fa-regular fa-circle"></i><span>manage</span>
                         </a>
                     </li>
                 </ul>
-            </li><!-- End Documents Nav -->
-            <!-- Start Account settings Nav -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#crm" data-bs-toggle="collapse" href="#">
+                    <i class="fa-light fa-handshake-simple"></i><span>CRM</span>
+                    <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
+                </a>
+                <ul id="crm" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>Email analytcs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>manage</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#sales" data-bs-toggle="collapse" href="#">
+                    <i class="fa-light fa-bag-shopping"></i><span>sales</span>
+                    <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
+                </a>
+                <ul id="sales" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>Email analytcs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>manage</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#account-settings" data-bs-toggle="collapse" href="#">
-                    <i class="fa-sharp fa-regular fa-file-word"></i><span>Account Settings</span>
+                    <i class="fa-sharp fa-light fa-user"></i><span>Account Settings</span>
                     <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
                 </a>
                 <ul id="account-settings" class="nav-content collapse " data-bs-parent="#sidebar-nav">
@@ -314,11 +328,9 @@
                     </li>
                 </ul>
             </li>
-            <!-- End Account settings Nav -->
-            <!-- Start Account settings Nav -->
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#components" data-bs-toggle="collapse" href="#">
-                    <i class="fa-sharp fa-regular fa-file-word"></i><span>Components</span>
+                    <i class="fa-light fa-magnet"></i><span>Components</span>
                     <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
                 </a>
                 <ul id="components" class="nav-content collapse " data-bs-parent="#sidebar-nav">
@@ -334,106 +346,93 @@
                     </li>
                 </ul>
             </li>
-            <!-- End Account settings Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="user-panel-ai-image.html">
-                    <i class="fa-regular fa-image"></i>
-                    <span>AI Images</span>
+                    <i class="fa-light fa-image"></i>
+                    <span>subscription</span>
                 </a>
-            </li><!-- End AI Images Page Nav -->
-
+            </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="user-panel-ai-code.html">
-                    <i class="fa-regular fa-message-code"></i>
-                    <span>AI Code</span>
-                </a>
-            </li><!-- End AI Code Page Nav -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="chats.html">
-                    <i class="fa-regular fa-message-code"></i>
-                    <span>Ai Chats</span>
+                <a class="nav-link collapsed" href="user-panel-transection.html">
+                    <i class="fa-light fa-arrow-right-arrow-left"></i>
+                    <span>Transection</span>
                 </a>
             </li>
         </ul>
 
     </aside>
-    <!-------------------------------------------------------->
     <!-- Sidebar section end -->
-    <!-------------------------------------------------------->
 
     <main id="main" class="main">
-
         <div class="pagetitle">
             <h3>Dashboard</h3>
         </div>
         <!-- End Page Title -->
 
         <div class="section dashboard">
-            <!-- Left side columns -->
-
             <!-- Tab mobile view carousel start -->
             <div class="tab-mobile-view-carousel-section mb-30 d-lg-none">
                 <div class="row">
                     <div class="col-12">
-                        <div class="owl-carousel owl-theme carousel-area1">
-                            <div class="item card-item">
-                                <div class="card info-card sales-card card1-bg">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><i class="fa-sharp fa-regular fa-file-word"></i>Documents
-                                            Created</h5>
-
-                                        <div class="number number1 d-flex align-items-center">
-                                            <div>
-                                                <h6>145</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item card-item">
-                                <div class="card">
-
-                                    <div class="card-body">
-                                        <h5 class="card-title"><i class="fa-regular fa-scroll lime-green"></i> Words
-                                            Generated
+                        <div class="owl-carousel owl-theme carousel-1">
+                            <div class="item">
+                                <div class="box-card box-card1">
+                                    <div class="box-card-header">
+                                        <h5 class="box-card-title"><i class="fa-light fa-envelopes-bulk"></i>Email send
                                         </h5>
-
-                                        <div class="number number2 d-flex align-items-center">
-                                            <div>
-                                                <h6>23</h6>
-                                            </div>
+                                    </div>
+                                    <div class="box-card-body">
+                                        <h3 class="mb-0">842,145</h3>
+                                        <div class="statistics">
+                                            <p class="growth"><i class="fa-light fa-chart-line-up"></i>2.5%</p>
+                                            <div class="time">last 7 days</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="item card-item">
-                                <div class="card  card3-bg">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><i class="fa-regular fa-image dark-blue"></i> Images
-                                            Created</h5>
-
-                                        <div class="number number3 d-flex align-items-center">
-                                            <div>
-                                                <h6>195</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item card-item">
-                                <div class="card  card4-bg">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><i class="fa-regular fa-cloud-word soft-blue"></i>
-                                            topics Used
+                            <div class="item">
+                                <div class="box-card box-card2">
+                                    <div class="box-card-header">
+                                        <h5 class="box-card-title"><i class="fa-light fa-wave-pulse"></i>Avg. open rate
                                         </h5>
-
-                                        <div class="number number4 d-flex align-items-center">
-                                            <div>
-                                                <h6>200</h6>
-                                            </div>
+                                    </div>
+                                    <div class="box-card-body">
+                                        <h3 class="mb-0">62.35%</h3>
+                                        <div class="statistics">
+                                            <p class="growth"><i class="fa-light fa-chart-line-up"></i>6%</p>
+                                            <div class="time">last 7 days</div>
                                         </div>
-
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box-card box-card3">
+                                    <div class="box-card-header">
+                                        <h5 class="box-card-title"><i class="fa-light fa-wave-pulse"></i>Avg. click rate
+                                        </h5>
+                                    </div>
+                                    <div class="box-card-body">
+                                        <h3 class="mb-0">2.35%</h3>
+                                        <div class="statistics">
+                                            <p class="growth down"><i class="fa-light fa-chart-line-down"></i>0.5%</p>
+                                            <div class="time">last 7 days</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box-card box-card4">
+                                    <div class="box-card-header">
+                                        <h5 class="box-card-title"><i
+                                                class="fa-light fa-closed-captioning-slash"></i>Unsubscribe rate</h5>
+                                    </div>
+                                    <div class="box-card-body">
+                                        <h3 class="mb-0">3.32%</h3>
+                                        <div class="statistics">
+                                            <p class="growth"><i class="fa-light fa-chart-line-up"></i>0.3%</p>
+                                            <div class="time">last 7 days</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -446,113 +445,301 @@
             <!-- Dashboard card start -->
             <div class="col-12 d-none d-lg-block">
                 <div class="row g-4">
-                    <div class="col-xxl-3 col-sm-6 card-item">
-                        <div class="card">
-                            <div class="filter">
-                                <a class="icon" href="#" data-bs-toggle="dropdown"><i
-                                        class="fa-regular fa-ellipsis"></i></a>
-                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                    <li class="dropdown-header text-start">
-                                        <h6>Filter</h6>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Today</a></li>
-                                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                                </ul>
+                    <div class="col-xxl-3 col-sm-6 box-item">
+                        <div class="box-card">
+                            <div class="box-card-header">
+                                <h5 class="box-card-title"><i class="fa-light fa-envelopes-bulk"></i>Email send</h5>
                             </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="fa-sharp fa-regular fa-file-word"></i>Email Send</h5>
-
-                                <div class="number d-flex align-items-center">
-                                    <div>
-                                        <h6>145</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-sm-6 card-item">
-                        <div class="card">
-                            <div class="filter">
-                                <a class="icon" href="#" data-bs-toggle="dropdown"><i
-                                        class="fa-regular fa-ellipsis"></i></a>
-                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                    <li class="dropdown-header text-start">
-                                        <h6>Filter</h6>
-                                    </li>
-
-                                    <li><a class="dropdown-item" href="#">Today</a></li>
-                                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                                </ul>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="fa-regular fa-scroll"></i> Words Generated </h5>
-
-                                <div class="number d-flex align-items-center">
-                                    <div>
-                                        <h6>23</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-sm-6 card-item">
-                        <div class="card ">
-                            <div class="filter">
-                                <a class="icon" href="#" data-bs-toggle="dropdown"><i
-                                        class="fa-regular fa-ellipsis"></i></a>
-                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                    <li class="dropdown-header text-start">
-                                        <h6>Filter</h6>
-                                    </li>
-
-                                    <li><a class="dropdown-item" href="#">Today</a></li>
-                                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                                </ul>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="fa-regular fa-image"></i> Images Created</h5>
-                                <div class="number d-flex align-items-center">
-                                    <div>
-                                        <h6>195</h6>
-                                    </div>
+                            <div class="box-card-body">
+                                <h3 class="mb-0">842,145</h3>
+                                <div class="statistics">
+                                    <p class="growth"><i class="fa-light fa-chart-line-up"></i>2.5%</p>
+                                    <div class="time">last 7 days</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-sm-6 card-item">
-                        <div class="card ">
-                            <div class="filter">
-                                <a class="icon" href="#" data-bs-toggle="dropdown"><i
-                                        class="fa-regular fa-ellipsis"></i></a>
-                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                                    <li class="dropdown-header text-start">
-                                        <h6>Filter</h6>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Today</a></li>
-                                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                                </ul>
+                    <div class="col-xxl-3 col-sm-6 box-item">
+                        <div class="box-card">
+                            <div class="box-card-header">
+                                <h5 class="box-card-title"><i class="fa-light fa-wave-pulse"></i>Avg. open rate</h5>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="fa-regular fa-cloud-word"></i> topics Used</h5>
-                                <div class="number d-flex align-items-center">
-                                    <div>
-                                        <h6>200</h6>
-                                    </div>
+                            <div class="box-card-body">
+                                <h3 class="mb-0">62.35%</h3>
+                                <div class="statistics">
+                                    <p class="growth"><i class="fa-light fa-chart-line-up"></i>6%</p>
+                                    <div class="time">last 7 days</div>
                                 </div>
-
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-sm-6 box-item">
+                        <div class="box-card">
+                            <div class="box-card-header">
+                                <h5 class="box-card-title"><i class="fa-light fa-wave-pulse"></i>Avg. click rate</h5>
+                            </div>
+                            <div class="box-card-body">
+                                <h3 class="mb-0">2.35%</h3>
+                                <div class="statistics">
+                                    <p class="growth down"><i class="fa-light fa-chart-line-down"></i>0.5%</p>
+                                    <div class="time">last 7 days</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-sm-6 box-item">
+                        <div class="box-card">
+                            <div class="box-card-header">
+                                <h5 class="box-card-title"><i
+                                        class="fa-light fa-closed-captioning-slash"></i>Unsubscribe rate</h5>
+                            </div>
+                            <div class="box-card-body">
+                                <h3 class="mb-0">3.32%</h3>
+                                <div class="statistics">
+                                    <p class="growth"><i class="fa-light fa-chart-line-up"></i>0.3%</p>
+                                    <div class="time">last 7 days</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Dashboard card start -->
+            <!-- Cmn table section start -->
+            <div class="card mt-50">
+                <div class="card-header d-flex justify-content-between border-0">
+                    <h4>Fund History</h4>
+                    <div class="btn-area">
+                        <button type="button" class="cmn-btn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Filter<i
+                                class="fa-regular fa-filter"></i></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="cmn-table">
+                        <div class="table-responsive overflow-hidden">
+                            <table class="table align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Transaction ID</th>
+                                        <th scope="col">Gateway</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Charge</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Time & Date</th>
+                                        <th scope="col">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                        <td data-label="Gateway">
+                                            <span>Bank Transfer</span>
+                                        </td>
+                                        <td data-label="Amount">
+                                            <span>10 USD</span>
+                                        </td>
+                                        <td data-label="Charge">
+                                            <span>5 USD</span>
+                                        </td>
+                                        <td data-label="Status">
+                                            <span class="badge text-bg-primary">Primary</span>
+                                        </td>
+                                        <td data-label="Time">
+                                            <span>12 Apr 2023 04:40 PM</span>
+                                        </td>
+                                        <td data-label="Action">
+                                            <div class="dropdown">
+                                                <button class="" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">save</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#apply-modal">apply</a></li>
+                                                    <li><a class="dropdown-item" href="#">copy link</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">report</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                        <td data-label="Gateway">
+                                            <span>Bank Transfer</span>
+                                        </td>
+                                        <td data-label="Amount">
+                                            <span>10 USD</span>
+                                        </td>
+                                        <td data-label="Charge">
+                                            <span>5 USD</span>
+                                        </td>
+                                        <td data-label="Status">
+                                            <span class="badge text-bg-secondary">Primary</span>
+                                        </td>
+                                        <td data-label="Time">
+                                            <span>12 Apr 2023 04:40 PM</span>
+                                        </td>
+                                        <td data-label="Action">
+                                            <div class="dropdown">
+                                                <button class="" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">save</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#apply-modal">apply</a></li>
+                                                    <li><a class="dropdown-item" href="#">copy link</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">report</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                        <td data-label="Gateway">
+                                            <span>Bank Transfer</span>
+                                        </td>
+                                        <td data-label="Amount">
+                                            <span>10 USD</span>
+                                        </td>
+                                        <td data-label="Charge">
+                                            <span>5 USD</span>
+                                        </td>
+                                        <td data-label="Status">
+                                            <span class="badge text-bg-success">Primary</span>
+                                        </td>
+                                        <td data-label="Time">
+                                            <span>12 Apr 2023 04:40 PM</span>
+                                        </td>
+                                        <td data-label="Action">
+                                            <div class="dropdown">
+                                                <button class="" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">save</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#apply-modal">apply</a></li>
+                                                    <li><a class="dropdown-item" href="#">copy link</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">report</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                        <td data-label="Gateway">
+                                            <span>Bank Transfer</span>
+                                        </td>
+                                        <td data-label="Amount">
+                                            <span>10 USD</span>
+                                        </td>
+                                        <td data-label="Charge">
+                                            <span>5 USD</span>
+                                        </td>
+                                        <td data-label="Status">
+                                            <span class="badge text-bg-danger">Primary</span>
+                                        </td>
+                                        <td data-label="Time">
+                                            <span>12 Apr 2023 04:40 PM</span>
+                                        </td>
+                                        <td data-label="Action">
+                                            <div class="dropdown">
+                                                <button class="" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fa-regular fa-ellipsis-stroke-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">save</a></li>
+                                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#apply-modal">apply</a></li>
+                                                    <li><a class="dropdown-item" href="#">copy link</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">report</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                        <td data-label="Gateway">
+                                            <span>Bank Transfer</span>
+                                        </td>
+                                        <td data-label="Amount">
+                                            <span>10 USD</span>
+                                        </td>
+                                        <td data-label="Charge">
+                                            <span>5 USD</span>
+                                        </td>
+                                        <td data-label="Status">
+                                            <span class="badge text-bg-warning">Primary</span>
+                                        </td>
+                                        <td data-label="Time">
+                                            <span>12 Apr 2023 04:40 PM</span>
+                                        </td>
+                                        <td data-label="Action"><button type="button" class="action-btn"><i
+                                                    class="fa-regular fa-pen-to-square"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                        <td data-label="Gateway">
+                                            <span>Bank Transfer</span>
+                                        </td>
+                                        <td data-label="Amount">
+                                            <span>10 USD</span>
+                                        </td>
+                                        <td data-label="Charge">
+                                            <span>5 USD</span>
+                                        </td>
+                                        <td data-label="Status">
+                                            <span class="badge text-bg-info">Primary</span>
+                                        </td>
+                                        <td data-label="Time">
+                                            <span>12 Apr 2023 04:40 PM</span>
+                                        </td>
+                                        <td data-label="Action"><button type="button" class="action-btn"><i
+                                                    class="fa-regular fa-pen-to-square"></i></button></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td data-label="Transaction ID"><span>#12415346563475</span></td>
+                                        <td data-label="Gateway">
+                                            <span>Bank Transfer</span>
+                                        </td>
+                                        <td data-label="Amount">
+                                            <span>10 USD</span>
+                                        </td>
+                                        <td data-label="Charge">
+                                            <span>5 USD</span>
+                                        </td>
+                                        <td data-label="Status">
+                                            <span class="badge text-bg-dark">Primary</span>
+                                        </td>
+                                        <td data-label="Time">
+                                            <span>12 Apr 2023 04:40 PM</span>
+                                        </td>
+                                        <td data-label="Action"><button type="button" class="action-btn"><i
+                                                    class="fa-regular fa-pen-to-square"></i></button></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cmn table section end -->
 
 
         </div>
@@ -582,6 +769,50 @@
 
 
 
+    <!-- Offcanvas sidebar start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Product Filter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="row g-4">
+                    <div>
+                        <label for="ProductName" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="ProductName">
+                    </div>
+                    <div>
+                        <label for="NumberOfSales" class="form-label">Number of sales</label>
+                        <input type="text" class="form-control" id="NumberOfSales">
+                    </div>
+                    <div>
+                        <label class="form-label">status</label>
+                        <select class="cmn-select2-dropdown" name="state">
+                            <option value="AL">All status</option>
+                            <option value="AL">Bangladesh</option>
+                            <option value="WY">Australia</option>
+                            <option value="WY">Belarus</option>
+                            <option value="WY">Canada</option>
+                            <option value="WY">China</option>
+                            <option value="WY">France</option>
+                            <option value="WY">Germany</option>
+                            <option value="WY">India</option>
+                            <option value="WY">Indonesia</option>
+                            <option value="WY">Italy</option>
+                            <option value="WY">Japan</option>
+                            <option value="WY">Korea</option>
+                        </select>
+                    </div>
+                    <div class="btn-area">
+                        <button type="submit" class="cmn-btn">Filter</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- Offcanvas sidebar end -->
 
 
 
