@@ -283,7 +283,10 @@ intlTelInput start
 .iti {
     display: flex;
 }
-
+.iti__selected-flag{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 .iti__country-list {
     box-shadow: var(--shadow1);
     border: 1px solid var(--border-color2);
