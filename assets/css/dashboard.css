@@ -32,9 +32,9 @@
   --transition: all .3s ease-in-out;
 }
 
-/*-------------------------------------------------------
-                    reset
--------------------------------------------------------*/
+/*----------------------------------------------
+Reset section start
+----------------------------------------------*/
 ::-moz-selection {
   color: var(--white);
   background: var(--primary-color);
@@ -1131,7 +1131,7 @@ hr.divider:after {
 
 .dropdown-menu {
   max-height: 30rem;
-  min-width: 21rem;
+  min-width: 15rem;
   overflow-y: auto;
   border-radius: 8px;
   padding: 8px;
@@ -1660,151 +1660,88 @@ hr.divider:after {
 /*--------------------------------------------------------------
   # Header Nav
   --------------------------------------------------------------*/
-.header-nav ul {
-  list-style: none;
-}
-
-.header-nav > ul {
-  margin: 0;
-  padding: 0;
-}
-
 .header-nav .nav-icon {
   font-size: 22px;
   color: #012970;
   margin-right: 25px;
   position: relative;
 }
-
-.header-nav .nav-profile {
-  color: var(--heading-color);
-}
-
-.header-nav .nav-profile img {
-  width: 36px;
-  height: 36px;
-}
-
-.header-nav .nav-profile span {
-  font-size: 14px;
-  font-weight: 500;
-}
-
 .header-nav .badge-number {
   position: absolute;
   inset: -2px -5px auto auto;
-  font-weight: normal;
   font-size: 12px;
   padding: 3px 6px;
   background-color: var(--primary-color);
 }
-
+.header-nav .nav-profile {
+  color: var(--heading-color);
+}
+.header-nav .nav-profile img {
+  width: 36px;
+  height: 36px;
+}
+.header-nav .nav-profile span {
+  font-size: 14px;
+  font-weight: 500;
+}
 .header-nav .notifications {
   inset: 8px -15px auto auto !important;
+  min-width: 340px;
 }
-
 .header-nav .notifications .notification-item a {
   display: flex;
   align-items: center;
   padding: 10px;
   transition: 0.3s;
 }
-
 .header-nav .notifications .notification-item i {
   margin: 0 20px 0 10px;
   font-size: 24px;
 }
-
 .header-nav .notifications .notification-item h4 {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 5px;
 }
-
 .header-nav .notifications .notification-item p {
   font-size: 13px;
   margin-bottom: 3px;
   color: #919191;
 }
-
 .header-nav .notifications .notification-item:hover {
   background-color: var(--primary-color-opacity-low);
 }
-
-.header-nav .messages {
-  inset: 8px -15px auto auto !important;
-}
-
-.header-nav .messages .message-item {
-  padding: 10px;
-  transition: 0.3s;
-}
-
-.header-nav .messages .message-item a {
-  display: flex;
-}
-
-.header-nav .messages .message-item img {
-  margin: 0 20px 0 10px;
-  max-height: 40px;
-  min-width: 40px;
-}
-
-.header-nav .messages .message-item h4 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #444444;
-}
-
-.header-nav .messages .message-item p {
-  font-size: 13px;
-  margin-bottom: 3px;
-  color: #919191;
-}
-
-.header-nav .messages .message-item:hover {
-  background-color: var(--primary-color-opacity-low);
-}
-
 .header-nav .profile {
   min-width: 240px;
   padding-bottom: 0;
   top: 8px !important;
 }
-
 .header-nav .profile .dropdown-header h6 {
   font-size: 18px;
   margin-bottom: 0;
   font-weight: 500;
 }
-
 .header-nav .profile .dropdown-header span {
   font-size: 14px;
 }
-
 .header-nav .profile .dropdown-item {
   font-size: 14px;
   padding: 10px 15px;
   transition: 0.3s;
 }
-
+.header-nav .profile .dropdown-item:hover {
+  background-color: var(--primary-color-opacity-low);
+}
 .header-nav .profile .dropdown-item i {
   margin-right: 10px;
   font-size: 18px;
   line-height: 0;
 }
-
-.header-nav .profile .dropdown-item:hover {
-  background-color: var(--primary-color-opacity-low);
-}
-
 .header-nav .profile .dropdown-header .profile-thum {
   max-width: 36px;
   max-height: 36px;
   margin-right: 10px;
 }
-
 .header-nav .profile .dropdown-header .profile-thum img {
   border-radius: 50%;
 }
@@ -1813,12 +1750,10 @@ hr.divider:after {
   margin-left: 0 !important;
   margin-right: auto;
 }
-
 .rtl .nav-item.dropdown.pe-3 {
   padding-right: 0 !important;
   padding-left: 16px;
 }
-
 .rtl .header-nav .nav-profile span {
   padding-left: 0 !important;
   padding-right: 8px;
@@ -1831,12 +1766,6 @@ hr.divider:after {
   inset: 8px auto auto -15px !important;
 }
 .rtl .header-nav .notifications .notification-item i {
-  margin: 0 10px 0 20px;
-}
-.rtl .header-nav .messages {
-  inset: 8px -230px auto auto !important;
-}
-.rtl .header-nav .messages .message-item img {
   margin: 0 10px 0 20px;
 }
 .rtl .header-nav .profile .dropdown-item i {
@@ -1861,9 +1790,9 @@ hr.divider:after {
     inset: 8px -15px auto auto !important;
   }
 }
-/*--------------------------------------------------------------
-# Sidebar
---------------------------------------------------------------*/
+/*-----------------------------------------------
+Sidebar start
+------------------------------------------------*/
 .sidebar {
   position: fixed;
   top: 60px;
@@ -1924,17 +1853,14 @@ hr.divider:after {
   height: 100%;
   padding-bottom: 235px;
 }
-
 .sidebar-nav li {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
 .sidebar-nav .nav-item {
   margin-bottom: 5px;
 }
-
 .sidebar-nav .nav-heading {
   font-size: 11px;
   text-transform: uppercase;
@@ -1942,7 +1868,6 @@ hr.divider:after {
   font-weight: 600;
   margin: 10px 0 5px 15px;
 }
-
 .sidebar-nav .nav-link {
   display: flex;
   align-items: center;
@@ -1956,30 +1881,25 @@ hr.divider:after {
   text-transform: capitalize;
   border-left: 3px solid transparent;
 }
-
 .sidebar-nav .nav-link.active {
   background: var(--primary-color-opacity-low);
   color: var(--primary-color);
   border-left: 3px solid var(--primary-color);
 }
-
 .sidebar-nav .nav-link.active:hover {
   background: var(--primary-color-opacity-low);
   color: var(--primary-color);
   border-left: 3px solid var(--primary-color);
 }
-
 .sidebar-nav .nav-link:hover {
   background: var(--primary-color-opacity-low);
   color: var(--primary-color);
   border-left: 3px solid var(--primary-color);
 }
-
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
 }
-
 .sidebar-nav .nav-link .bi-chevron-down {
   margin-right: 0;
   transition: transform 0.2s ease-in-out;
@@ -1993,17 +1913,14 @@ hr.divider:after {
   border-radius: 5px;
   color: var(--body-color);
 }
-
 .sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
   transform: rotate(180deg);
 }
-
 .sidebar-nav .nav-content {
   padding: 5px 0 0 0;
   margin: 0;
   list-style: none;
 }
-
 .sidebar-nav .nav-content a {
   display: flex;
   align-items: center;
@@ -2013,21 +1930,14 @@ hr.divider:after {
   transition: var(--transition);
   text-transform: capitalize;
 }
-
+.sidebar-nav .nav-content a:hover, .sidebar-nav .nav-content a.active {
+  color: var(--primary-color);
+}
 .sidebar-nav .nav-content a i {
   font-size: 6px;
   margin-right: 8px;
   line-height: 0;
   border-radius: 50%;
-}
-
-.sidebar-nav .nav-content a:hover,
-.sidebar-nav .nav-content a.active {
-  color: var(--primary-color);
-}
-
-.sidebar-nav .nav-content a.active i {
-  background-color: #4154f1;
 }
 
 @media (max-width: 991px) {
@@ -2089,8 +1999,8 @@ hr.divider:after {
   }
 }
 /*--------------------------------------------------------------
-# Main
---------------------------------------------------------------*/
+    # Main
+    --------------------------------------------------------------*/
 #main {
   margin-top: 60px;
   padding: 30px;
@@ -2116,8 +2026,8 @@ hr.divider:after {
   }
 }
 /*----------------------------------------------
-Card section start
-----------------------------------------------*/
+    Card section start
+    ----------------------------------------------*/
 .card {
   border-radius: 10px;
   box-shadow: var(--shadow2);
@@ -2133,10 +2043,10 @@ Card section start
 }
 
 /*----------------------------------------------
-Card section end
+    Card section end
 ----------------------------------------------*/
 /*----------------------------------------------
-Cmn table section start
+    Cmn table section start
 ----------------------------------------------*/
 .cmn-table-card .search-bar {
   display: flex;
