@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template Dashboard</title>
     <!-- Favicon link -->
-    <link rel="shortcut icon" href="assets/images/logo/mail-send.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo/mail-send.png" type="image/x-icon">
     <!-- Fontawesome-6 Js link -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -40,7 +40,7 @@
 
         <div class="d-flex align-items-center justify-content-between">
             <a href="user-panel.html" class="logo d-flex align-items-center">
-                <img src="assets/images/logo/logo.png" alt="">
+                <img src="assets/img/logo/logo.png" alt="">
 
             </a>
             <button onclick="toggleSideMenu()" class="toggle-sidebar-btn d-none d-lg-block"><i
@@ -164,7 +164,7 @@
 
                         <li class="message-item">
                             <a href="#">
-                                <img src="assets/images/Person/2.jpg" alt="" class="rounded-circle">
+                                <img src="assets/img/Person/2.jpg" alt="" class="rounded-circle">
                                 <div>
                                     <h4>Maria Hudson</h4>
                                     <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -178,7 +178,7 @@
 
                         <li class="message-item">
                             <a href="#">
-                                <img src="assets/images/profile/profile2.jpg" alt="" class="rounded-circle">
+                                <img src="assets/img/profile/profile2.jpg" alt="" class="rounded-circle">
                                 <div>
                                     <h4>Anna Nelson</h4>
                                     <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -192,7 +192,7 @@
 
                         <li class="message-item">
                             <a href="#">
-                                <img src="assets/images/profile/profile1.jpg" alt="" class="rounded-circle">
+                                <img src="assets/img/profile/profile1.jpg" alt="" class="rounded-circle">
                                 <div>
                                     <h4>David Muldon</h4>
                                     <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
@@ -215,14 +215,14 @@
                 <li class="nav-item dropdown pe-3">
 
                     <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-                        <img src="assets/images/Person/2.jpg" alt="Profile" class="rounded-circle">
+                        <img src="assets/img/Person/2.jpg" alt="Profile" class="rounded-circle">
                         <span class="d-none d-lg-block dropdown-toggle ps-2">John Doe</span>
                     </a><!-- End Profile Iamge Icon -->
 
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header d-flex justify-content-center text-start">
                             <div class="profile-thum">
-                                <img src="assets/images/Person/2.jpg" alt="">
+                                <img src="assets/img/Person/2.jpg" alt="">
                             </div>
                             <div class="profile-content">
                                 <h6>John Doe</h6>
@@ -310,19 +310,99 @@
 
 
     <!-- Sidebar section start -->
-
     <aside id="sidebar" class="sidebar">
-
         <ul class="sidebar-nav" id="sidebar-nav">
-
             <li class="nav-item">
                 <a class="nav-link active" href="user-panel.html">
-                    <i class="fa-light fa-grid-2"></i>
-                    <span>Overview</span>
+                    <i class="fa-regular fa-grid"></i>
+                    <span>Dashboard</span>
                 </a>
-            </li><!-- End Dashboard Nav -->
+            </li>
 
-            <!-- Start Account settings Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="topics.html">
+                    <i class="fa-light fa-address-book"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+                    <i class="fa-light fa-paper-plane"></i><span>Email marketing</span>
+                    <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
+                </a>
+                <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>Email analytcs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>manage</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#crm" data-bs-toggle="collapse" href="#">
+                    <i class="fa-light fa-handshake-simple"></i><span>CRM</span>
+                    <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
+                </a>
+                <ul id="crm" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>Email analytcs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>manage</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#sales" data-bs-toggle="collapse" href="#">
+                    <i class="fa-light fa-bag-shopping"></i><span>sales</span>
+                    <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
+                </a>
+                <ul id="sales" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>Email analytcs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>manage</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#account-settings" data-bs-toggle="collapse" href="#">
+                    <i class="fa-sharp fa-light fa-user"></i><span>Account Settings</span>
+                    <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
+                </a>
+                <ul id="account-settings" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="account-settings-profile.html">
+                            <i class="fa-regular fa-circle"></i><span>Account</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account-settings-notifications.html">
+                            <i class="fa-regular fa-circle"></i><span>Notifications</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account-settings-identity-verification.html">
+                            <i class="fa-regular fa-circle"></i><span>KYC</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" data-bs-target="#components" data-bs-toggle="collapse" href="#">
                     <i class="fa-light fa-magnet"></i><span>Components</span>
@@ -341,51 +421,22 @@
                     </li>
                 </ul>
             </li>
-            <!-- End Account settings Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="user-panel-fund-history.html">
-                    <i class="fa-light fa-clock-rotate-left"></i>
-                    <span>Fund History</span>
+                <a class="nav-link collapsed" href="user-panel-ai-image.html">
+                    <i class="fa-light fa-image"></i>
+                    <span>subscription</span>
                 </a>
-            </li><!-- End AI Images Page Nav -->
-
+            </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="user-panel-transection.html">
                     <i class="fa-light fa-arrow-right-arrow-left"></i>
-                    <span>Transections</span>
-                </a>
-            </li><!-- End AI Code Page Nav -->
-
-        </ul>
-
-        <ul class="nav-bottom">
-            <li class="nav-item">
-                <a class="nav-link" href="account-settings-profile.html">
-                    <i class="fa-light fa-gear"></i>
-                    <span>Settings</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <div class="nav-link d-flex">
-                    <i class="fa-light fa-moon" id="moon"></i>
-                    <i class="fa-light fa-sun-bright" id="sun"></i>
-                    <div class="form-check form-switch" id="toggle-btn">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="user-panel.html">
-                    <i class="fa-light fa-arrow-up-left-from-circle"></i>
-                    <span>Log Out</span>
+                    <span>Transection</span>
                 </a>
             </li>
         </ul>
-
 
     </aside>
-
     <!-- Sidebar section end -->
 
 

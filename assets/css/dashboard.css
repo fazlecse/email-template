@@ -198,16 +198,15 @@ textarea.form-control {
 }
 
 .rtl .form-check {
-  padding-left: auto;
-  padding-right: 1.5em;
+  padding-right: 2.5em;
 }
 .rtl .form-check .form-check-input {
   float: right;
-  margin-right: -1.5em;
+  margin-right: -2.5em;
 }
 
 .form-select {
-  background-image: url(../images/shipment_calculator/downward-arrow.png);
+  background-image: url(../img/shipment_calculator/downward-arrow.png);
   background-repeat: no-repeat;
 }
 
@@ -267,7 +266,8 @@ textarea.form-control {
   padding-left: 0;
 }
 
-.select2-container .select2-selection--single:focus, .select2-container .select2-selection--multiple:focus {
+.select2-container .select2-selection--single:focus,
+.select2-container .select2-selection--multiple:focus {
   border: 1px solid var(--primary-color);
   box-shadow: 0 0 0 4px rgba(51, 104, 250, 0.1);
 }
@@ -540,8 +540,8 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 .search-bar .search-form .form-control {
-  background-color: var(--white);
-  border-color: var(--border-color2);
+  background-color: var(--bg-color1);
+  border: 1px solid var(--bg-color1);
   padding: 10px 35px 10px 10px;
 }
 .search-bar .search-form .form-control:focus {
@@ -669,8 +669,7 @@ body::-webkit-scrollbar-thumb {
 
 .rtl .cmn-btn i {
   margin-left: 0;
-  margin-right: 10px;
-  transform: rotate(180deg);
+  margin-right: 5px;
 }
 
 .cmn-btn2 {
@@ -1446,7 +1445,7 @@ hr.divider:after {
   padding: 10px 25px;
 }
 
-/* Box Card start*/
+/* Box Card section start*/
 .box-card {
   border: none;
   border-radius: 10px;
@@ -1532,16 +1531,21 @@ hr.divider:after {
     margin-right: 32px;
   }
 }
+.rtl .box-card .box-card-title i {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.rtl .box-card .statistics .growth i {
+  margin-right: 0;
+  margin-left: 5px;
+  transform: rotate(270deg);
+}
 .rtl .box-item .box-card-title i {
   margin-right: 0;
   margin-left: 10px;
 }
 
-.rtl .box-card-title i {
-  margin-right: 0;
-  margin-left: 10px;
-}
-
+/* Box Card section end*/
 .bottom-nav {
   background: var(--white);
   justify-content: space-around;
@@ -1713,7 +1717,7 @@ hr.divider:after {
 
 .header-nav .notifications .notification-item h4 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 
@@ -1824,7 +1828,7 @@ hr.divider:after {
   margin-left: 25px;
 }
 .rtl .header-nav .notifications {
-  inset: 8px -230px auto auto !important;
+  inset: 8px auto auto -15px !important;
 }
 .rtl .header-nav .notifications .notification-item i {
   margin: 0 10px 0 20px;
@@ -2124,6 +2128,8 @@ Card section start
   padding: 20px;
   background-color: var(--white);
   border-bottom: 1px solid var(--border-color1);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /*----------------------------------------------
@@ -2248,6 +2254,19 @@ Cmn table section start
     padding: 7px;
   }
 }
+.rtl .cmn-table table thead tr th:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.rtl .cmn-table table thead tr th:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
 /*----------------------------------------------
 Cmn table section end
 ----------------------------------------------*/
@@ -2403,13 +2422,13 @@ Footer it works section end
 /*----------------------------------------------
 Pagination section start
 ----------------------------------------------*/
-.pagination-section .page-link:focus {
-  background-color: var(--primary-color);
-  color: var(--white);
-  outline: 0;
-  box-shadow: none;
+.pagination-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
 }
-.pagination-section ul li a {
+.pagination-section nav .pagination .page-item .page-link {
+  margin: 5px;
   width: 40px;
   height: 40px;
   border-radius: 8px !important;
@@ -2418,30 +2437,26 @@ Pagination section start
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 10px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--border-color2);
   box-shadow: none;
 }
-.pagination-section ul li a:hover {
+.pagination-section nav .pagination .page-item .page-link:hover, .pagination-section nav .pagination .page-item .page-link:focus {
   background-color: var(--primary-color);
-  color: var(--white) !important;
+  color: var(--white);
   border: 1px solid var(--primary-color);
 }
-.pagination-section ul li i {
-  display: flex;
-}
-.pagination-section ul .active a {
+.pagination-section nav .pagination .page-item.active .page-link {
   background-color: var(--primary-color);
   color: var(--white);
   border-color: var(--primary-color);
 }
 
-.rtl .pagination-section ul li i {
+.rtl .pagination-section nav .pagination .page-item .page-link i {
   transform: rotate(180deg);
 }
 
 /*----------------------------------------------
-Pagination section end
+Pagination end
 ----------------------------------------------*/
 /*----------------------------------------------
 Transections section start

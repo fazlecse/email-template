@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template</title>
     <!-- Favicon-link -->
-    <link rel="shortcut icon" href="assets/images/logo/mail-send.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo/mail-send.png" type="image/x-icon">
     <!-- Fontawesome6-Js-link -->
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <!-- select2-Css-link -->
     <link rel="stylesheet" href="assets/css/select2.min.css">
+    <!-- intlTelInput -Css link -->
+    <link rel="stylesheet" href="assets/css/intlTelInput.min.css">
 
     <!-- Style_Css_link -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -37,14 +39,14 @@
     <!-- Nav section start -->
     <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
+            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <i class="fa-light fa-list"></i>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
                 <div class="offcanvas-header">
-                    <a class="navbar-brand" href="index.html"><img class="logo" src="assets/images/logo/logo.png"
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo/logo.png"
                             alt=""></a>
                     <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
                         aria-label="Close"><i class="fa-light fa-arrow-right"></i></button>
@@ -158,17 +160,8 @@
                                     <input type="email" class="form-control" id="exampleInputEmail4"
                                         placeholder="Email">
                                 </div>
-                                <div class="col-md-6">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected="">+088 (Bangladesh)</option>
-                                        <option value="1">+93 (Afghanistan)</option>
-                                        <option value="2">+93 (Afghanistan)</option>
-                                        <option value="3">+93 (Afghanistan)</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" id="exampleInputEmail1"
-                                        placeholder="Your phone number">
+                                <div class="col-12">
+                                    <input id="telephone" class="form-control" name="phone" type="tel">
                                 </div>
                                 <div class="col-12">
                                     <div class="password-box">
@@ -203,7 +196,7 @@
                 </div>
                 <div class="col-xl-6 col-md-6 order-1 order-md-2 d-none d-md-block">
                     <div class="login-signup-thums">
-                        <img src="assets/images/login_signup/login-signup.png" alt="">
+                        <img src="assets/img/login_signup/login-signup.png" alt="">
                     </div>
                 </div>
             </div>
@@ -220,7 +213,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="footer-widget">
                         <div class="widget-logo mb-30">
-                            <a href="#nav_area"><img class="footer-logo" src="assets/images/logo/logo.png" alt=""></a>
+                            <a href="#nav_area"><img class="footer-logo" src="assets/img/logo/logo.png" alt=""></a>
                         </div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga odit excepturi,
                             natus voluptate commodi qui sunt quisquam cupiditate molestiae?</p>
@@ -311,7 +304,8 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- select2_Js_link -->
     <script src="assets/js/select2.min.js"></script>
-
+    <!-- intlTelInput Js link -->
+    <script src="assets/js/intlTelInput.min.js"></script>
 
     <!-- Main_Js_link -->
     <script src="assets/js/main.js"></script>

@@ -103,7 +103,8 @@ preloader section start
     display: flex;
     align-items: center;
     justify-content: center;
-    .loader{
+
+    .loader {
         height: 150px;
         width: 150px;
         border: 15px solid var(--white);
@@ -112,9 +113,9 @@ preloader section start
         border-top: 15px solid var(--primary-color);
         animation: spin 2s linear infinite;
     }
-    
-    @keyframes spin{
-        100%{
+
+    @keyframes spin {
+        100% {
             transform: rotate(360deg);
         }
     }
@@ -255,7 +256,7 @@ textarea.form-control {
 }
 
 .form-select {
-    background-image: url(../images/accordion/arrow-down.png);
+    background-image: url(../img/accordion/arrow-down.png);
     background-repeat: no-repeat;
 }
 
@@ -277,8 +278,29 @@ textarea.form-control {
 }
 
 /*----------------------------------------------
+intlTelInput start
+----------------------------------------------*/
+.iti {
+    display: flex;
+}
+
+.iti__country-list {
+    box-shadow: var(--shadow1);
+    border: 1px solid var(--border-color2);
+    border-radius: 5px;
+}
+
+.iti-mobile .iti__country-list {
+    z-index: 9999;
+}
+
+/*----------------------------------------------
+intlTelInput end
+----------------------------------------------*/
+/*----------------------------------------------
 Select2 start
 ----------------------------------------------*/
+
 
 span.select2.select2-container.select2-container--default {
     width: 100% !important;
@@ -1548,7 +1570,7 @@ end
 .navbar.active {
     background-color: var(--white);
     box-shadow: var(--shadow2);
-    z-index: 9999;
+    z-index: 999;
 }
 
 .navbar {
@@ -2340,7 +2362,7 @@ How it works end
     background: transparent;
 
     &::after {
-        background: url(../images/accordion/plus.png);
+        background: url(../img/accordion/plus.png);
         width: 30px;
         height: 30px;
         background-color: var(--primary-color);
@@ -2352,7 +2374,7 @@ How it works end
 
     &:not(.collapsed) {
         &::after {
-            background: url(../images/accordion/minus.png);
+            background: url(../img/accordion/minus.png);
             width: 30px;
             height: 30px;
             background-color: var(--primary-color);
@@ -2418,6 +2440,7 @@ Faq end
             transform: scale(1.1);
             width: 100%;
             height: 15vw;
+            max-height: 250px;
         }
     }
 
@@ -2528,7 +2551,7 @@ Blog end
 ----------------------------------------------*/
 
 .footer-section {
-    background: url(../images/background/bg-2.png);
+    background: url(../img/background/bg-2.png);
     background-size: cover;
     background-position: center;
 
@@ -2652,7 +2675,7 @@ Copyright end
     padding-bottom: 70px;
     position: relative;
     z-index: 1;
-    background: url(../images/background/bg-1.png);
+    background: url(../img/background/bg-1.png);
     background-size: cover;
     background-position: center;
 
@@ -2697,7 +2720,7 @@ Banner end
 ----------------------------------------------*/
 .docs-banner {
     padding: 100px 0 150px;
-    background: linear-gradient(rgb(245 249 255 / 90%), rgb(220 234 255)), url(../images/banner/group\ photo-bro2.png);
+    background: linear-gradient(rgb(245 249 255 / 90%), rgb(220 234 255)), url(../img/banner/group-photo-bro.png);
     background-size: cover;
     background-position: top;
 }
@@ -3176,6 +3199,7 @@ Contact end
         background-color: var(--white);
         padding: 30px 20px;
         border-radius: 15px;
+
         .cmn-btn {
             height: 45px;
         }
@@ -3193,11 +3217,13 @@ Contact end
         }
     }
 }
+
 .password-box {
     position: relative;
     display: flex;
     align-items: center;
-    .form-control{
+
+    .form-control {
         padding-right: 35px;
     }
 
@@ -3228,23 +3254,25 @@ Contact end
 // Responsive login signup end
 
 // Rtl login signup page start
-.rtl{
+.rtl {
     .login-signup-page .login-signup-form .cmn-btn-group .btn img {
         margin-left: 5px;
         margin-right: 0;
     }
-    .password-box{
-        .form-control{
+
+    .password-box {
+        .form-control {
             padding-right: .75rem;
             padding-left: 35px;
         }
-        .password-icon{
+
+        .password-icon {
             right: auto;
             left: 15px;
         }
     }
-    
-} 
+
+}
 
 // Rtl login signup page end
 

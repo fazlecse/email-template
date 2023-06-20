@@ -153,7 +153,7 @@ $(document).ready(function () {
             margin: 10,
             nav: false,
             dots: true,
-            rtl:true,
+            rtl: true,
             responsive: {
                 0: {
                     items: 1
@@ -253,14 +253,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
 const password = document.querySelector('.password');
 const passwordIcon = document.querySelector('.password-icon');
 
-passwordIcon.addEventListener("click", function(){
-    if(password.type == 'password'){
+passwordIcon.addEventListener("click", function () {
+    if (password.type == 'password') {
         password.type = 'text';
         passwordIcon.classList.add('fa-eye-slash');
-    }else{
+    } else {
         password.type = 'password';
         passwordIcon.classList.remove('fa-eye-slash');
     }
 })
 // input field show hide password end
 
+// Int Tel Input With Flags and Dial Codes start
+const input = document.querySelector("#telephone");
+window.intlTelInput(input, {
+    initialCountry: "bd",
+    separateDialCode: true,
+});
+// Int Tel Input With Flags and Dial Codes end

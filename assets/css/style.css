@@ -237,7 +237,7 @@ textarea.form-control {
 }
 
 .form-select {
-  background-image: url(../images/accordion/arrow-down.png);
+  background-image: url(../img/accordion/arrow-down.png);
   background-repeat: no-repeat;
 }
 
@@ -258,6 +258,26 @@ textarea.form-control {
   background: transparent;
 }
 
+/*----------------------------------------------
+intlTelInput start
+----------------------------------------------*/
+.iti {
+  display: flex;
+}
+
+.iti__country-list {
+  box-shadow: var(--shadow1);
+  border: 1px solid var(--border-color2);
+  border-radius: 5px;
+}
+
+.iti-mobile .iti__country-list {
+  z-index: 9999;
+}
+
+/*----------------------------------------------
+intlTelInput end
+----------------------------------------------*/
 /*----------------------------------------------
 Select2 start
 ----------------------------------------------*/
@@ -1401,7 +1421,7 @@ end
 .navbar.active {
   background-color: var(--white);
   box-shadow: var(--shadow2);
-  z-index: 9999;
+  z-index: 999;
 }
 
 .navbar {
@@ -1977,7 +1997,7 @@ How it works end
   background: transparent;
 }
 .accordion-button::after {
-  background: url(../images/accordion/plus.png);
+  background: url(../img/accordion/plus.png);
   width: 30px;
   height: 30px;
   background-color: var(--primary-color);
@@ -1987,7 +2007,7 @@ How it works end
   border-radius: 8px;
 }
 .accordion-button:not(.collapsed)::after {
-  background: url(../images/accordion/minus.png);
+  background: url(../img/accordion/minus.png);
   width: 30px;
   height: 30px;
   background-color: var(--primary-color);
@@ -2041,6 +2061,7 @@ Faq end
   transform: scale(1.1);
   width: 100%;
   height: 15vw;
+  max-height: 250px;
 }
 .blog-box .content-box {
   padding: 20px;
@@ -2111,7 +2132,7 @@ Blog end
 11. Footer section start
 ----------------------------------------------*/
 .footer-section {
-  background: url(../images/background/bg-2.png);
+  background: url(../img/background/bg-2.png);
   background-size: cover;
   background-position: center;
 }
@@ -2204,7 +2225,7 @@ Copyright end
   padding-bottom: 70px;
   position: relative;
   z-index: 1;
-  background: url(../images/background/bg-1.png);
+  background: url(../img/background/bg-1.png);
   background-size: cover;
   background-position: center;
 }
@@ -2240,7 +2261,7 @@ Banner end
 ----------------------------------------------*/
 .docs-banner {
   padding: 100px 0 150px;
-  background: linear-gradient(rgba(245, 249, 255, 0.9), rgb(220, 234, 255)), url(../images/banner/group\ photo-bro2.png);
+  background: linear-gradient(rgba(245, 249, 255, 0.9), rgb(220, 234, 255)), url(../img/banner/group-photo-bro.png);
   background-size: cover;
   background-position: top;
 }
