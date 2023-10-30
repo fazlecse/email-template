@@ -167,7 +167,7 @@ $(document).ready(function () {
             }
         });
     });
-    // Testimonial section start
+    // Testimonial section end
 
 
     // noUiSlider1 start pricing plan

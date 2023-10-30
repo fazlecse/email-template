@@ -512,7 +512,12 @@
                     <div class="btn-area">
                         <button type="button" class="cmn-btn" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Filter<i
-                                class="fa-regular fa-filter"></i></button>
+                                class="fa-regular fa-filter"></i>
+                        </button>
+                        <button type="button" class="cmn-btn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample2" aria-controls="offcanvasExample">Filter2<i
+                                class="fa-regular fa-filter"></i>
+                        </button>
                     </div>
                 </div>
                 <div class="card-body">
@@ -821,13 +826,69 @@
                         </select>
                     </div>
                     <div class="btn-area">
-                        <button type="submit" class="cmn-btn">Filter</button>
+                        <button type="submit" class="cmn-btn w-100">Filter</button>
                     </div>
                 </div>
 
             </form>
         </div>
     </div>
+
+
+    <!-- Filter2 offcanvas section start -->
+    <div class="filter2-offcanvas-section">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample2"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Product Filter</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <label for="ProductName" class="form-label">Product Name</label>
+                            <input type="text" class="form-control" id="ProductName">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="ProductName" class="form-label">Product Name</label>
+                            <input type="text" class="form-control" id="ProductName">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="NumberOfSales" class="form-label">Number of sales</label>
+                            <input type="text" class="form-control" id="NumberOfSales">
+                        </div>
+                       <div class="col-md-6">
+                        <div id="formModal">
+                            <label class="form-label">status</label>
+                            <select class="modal-select" name="state">
+                                <option value="AL">All status</option>
+                                <option value="AL">Bangladesh</option>
+                                <option value="WY">Australia</option>
+                                <option value="WY">Belarus</option>
+                                <option value="WY">Canada</option>
+                                <option value="WY">China</option>
+                                <option value="WY">France</option>
+                                <option value="WY">Germany</option>
+                                <option value="WY">India</option>
+                                <option value="WY">Indonesia</option>
+                                <option value="WY">Italy</option>
+                                <option value="WY">Japan</option>
+                                <option value="WY">Korea</option>
+                            </select>
+                        </div>
+                       </div>
+                        <div class="btn-area">
+                            <button type="submit" class="cmn-btn w-100">Filter</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Filter2 offcanvas section end -->
+    
     <!-- Offcanvas sidebar end -->
 
 

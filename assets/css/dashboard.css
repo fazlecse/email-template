@@ -1188,7 +1188,11 @@ hr.divider:after {
   border-bottom: 1px solid var(--border-color3);
 }
 
-/* reusable_style_end */
+.filter2-offcanvas-section .offcanvas {
+  width: 700px;
+}
+
+/* reusable style end */
 /* margin_top */
 .mt-10 {
   margin-top: 10px;
