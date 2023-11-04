@@ -103,7 +103,7 @@ preloader section start
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 
     .loader {
         height: 150px;
@@ -878,6 +878,40 @@ end
         color: var(--heading-color);
         background-color: var(--white);
     }
+}
+
+.action-btn-primary {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    line-height: initial;
+    color: var(--white);
+}
+
+.action-btn-primary:hover {
+    color: var(--white);
+}
+
+.action-btn-secondary {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--white);
+    line-height: initial;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: var(--transition);
+
+    &.show {
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+}
+
+.action-btn-secondary:hover {
+    color: var(--white);
+    background-color: var(--primary-color);
 }
 
 /*----------------------------------------------
@@ -3528,6 +3562,107 @@ Blog details end
 
 /*----------------------------------------------
 Pagination end
+----------------------------------------------*/
+
+
+/*----------------------------------------------
+22. Unsubscribe section start 
+----------------------------------------------*/
+.box-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.create-new-group-box {
+    padding: 60px 30px;
+    border: 1px solid var(--border-color1);
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.test-box {
+    padding: 20px 30px;
+    border: 1px solid var(--border-color1);
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+
+    .box-unsub-prefs {
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    .icon {
+        color: var(--primary-color);
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/*----------------------------------------------
+Unsubscribe section start 
+----------------------------------------------*/
+
+/*----------------------------------------------
+23. Opt out preferences section start
+----------------------------------------------*/
+.opt-out-box {
+    box-shadow: var(--shadow1);
+    border: 1px solid var(--border-color2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+
+    .header {
+        padding: 20px 30px;
+        border-bottom: 1px solid var(--border-color2);
+    }
+
+    .body {
+        padding: 20px 30px;
+        border-bottom: 1px solid var(--border-color2);
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border-color2);
+            padding-bottom: 5px;
+            gap: 5px;
+        }
+        .middle{
+            padding-top: 20px;
+            text-transform: capitalize;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    .footer{
+        padding: 20px 30px;
+    }
+}
+
+/*----------------------------------------------
+Opt out preferences section end
 ----------------------------------------------*/
 
 /*----------------------------------------------
