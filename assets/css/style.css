@@ -508,8 +508,8 @@ figure {
 }
 
 ::-webkit-scrollbar {
-  width: 3px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -950,6 +950,9 @@ end
 /*----------------------------------------------
 Cmn tab2 section start 
 ----------------------------------------------*/
+.cmn-tabs2 {
+  background-color: var(--bg-color3);
+}
 .cmn-tabs2 .nav-pills .nav-link {
   color: var(--white);
   opacity: 0.5;
@@ -1055,20 +1058,17 @@ section {
 }
 
 .badge {
-  background: var(--secondary-color2);
   font-weight: 600;
   text-transform: uppercase;
-  margin-left: 8px;
+  margin-right: 5px;
   padding: 3px;
   border-radius: 3px;
 }
-.badge:hover {
-  background: var(--primary-color);
+.badge.text-bg-info {
+  color: var(--white) !important;
 }
-
-.rtl .badge {
-  margin-right: 8px;
-  margin-left: 0;
+.badge.text-bg-success {
+  color: var(--white) !important;
 }
 
 .cmn-hr {
@@ -2389,6 +2389,7 @@ Developer end
 }
 .language-bash .docs-pre {
   padding: 0 0 0 30px;
+  position: relative;
 }
 .language-bash .copy-code {
   position: absolute;
@@ -2458,7 +2459,7 @@ Developer end
   position: fixed;
   padding-top: 95px;
   transition: var(--transition);
-  z-index: 1;
+  z-index: 2;
 }
 .sidebar-section .nav-area {
   overflow-y: auto;
@@ -2536,7 +2537,8 @@ main .main-inner {
   margin-top: 75px;
 }
 main .main-wrapper {
-  padding-top: 75px;
+  margin-top: 75px;
+  padding: 30px;
 }
 main .content-side {
   padding: 20px;
@@ -2559,6 +2561,15 @@ main .editor-side .editor-header .editor-title {
 }
 main .editor-side .language-bash {
   border-radius: 0;
+}
+
+.editor-content-area {
+  background-color: var(--bg-color2);
+}
+.editor-content-area .language-bash-inner {
+  position: relative;
+  height: 400px;
+  overflow: auto;
 }
 
 @media (min-width: 1200px) {

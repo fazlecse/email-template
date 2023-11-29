@@ -9,6 +9,7 @@ const toggleSideMenu = () => {
 };
 // toggleSideMenu end
 
+
 // add bg to nav
 window.addEventListener("scroll", function () {
     let scrollpos = window.scrollY;

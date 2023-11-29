@@ -552,8 +552,8 @@ figure {
 }
 
 ::-webkit-scrollbar {
-    width: 3px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1011,6 +1011,7 @@ Cmn tab section start
     justify-content: center;
     margin-bottom: 30px;
 
+
     .nav-pills {
         flex-wrap: initial;
         width: 100%;
@@ -1060,6 +1061,8 @@ end
 Cmn tab2 section start 
 ----------------------------------------------*/
 .cmn-tabs2 {
+    background-color: var(--bg-color3);
+
     .nav-pills {
         .nav-link {
             color: var(--white);
@@ -1181,22 +1184,22 @@ section {
 }
 
 .badge {
-    background: var(--secondary-color2);
     font-weight: 600;
     text-transform: uppercase;
-    margin-left: 8px;
+    margin-right: 5px;
     padding: 3px;
     border-radius: 3px;
 
-    &:hover {
-        background: var(--primary-color);
+    &.text-bg-info {
+        color: var(--white) !important;
+
+    }
+    &.text-bg-success {
+        color: var(--white) !important;
+
     }
 }
 
-.rtl .badge {
-    margin-right: 8px;
-    margin-left: 0;
-}
 
 .cmn-hr {
     background-color: transparent;
@@ -2860,6 +2863,7 @@ Developer end
 
     .docs-pre {
         padding: 0 0 0 30px;
+        position: relative;
     }
 
     .copy-code {
@@ -2933,7 +2937,7 @@ Developer end
     position: fixed;
     padding-top: 95px;
     transition: var(--transition);
-    z-index: 1;
+    z-index: 2;
 
     .nav-area {
         overflow-y: auto;
@@ -3030,13 +3034,16 @@ main {
     }
 
     .main-wrapper {
-        padding-top: 75px;
+        margin-top: 75px;
+        padding: 30px;
     }
 
     .content-side {
         padding: 20px;
         overflow-y: auto;
     }
+
+
 
     .editor-side {
         overflow-y: auto;
@@ -3059,6 +3066,19 @@ main {
         .language-bash {
             border-radius: 0;
         }
+    }
+
+
+}
+
+.editor-content-area {
+    background-color: var(--bg-color2);
+
+    .language-bash-inner {
+        position: relative;
+        height: 400px;
+        overflow: auto;
+
     }
 }
 
@@ -3165,6 +3185,7 @@ main {
 /*----------------------------------------------
 Docs end 
 ----------------------------------------------*/
+
 
 
 /*----------------------------------------------
@@ -3647,7 +3668,8 @@ Unsubscribe section start
             padding-bottom: 5px;
             gap: 5px;
         }
-        .middle{
+
+        .middle {
             padding-top: 20px;
             text-transform: capitalize;
             display: flex;
@@ -3656,7 +3678,8 @@ Unsubscribe section start
             gap: 10px;
         }
     }
-    .footer{
+
+    .footer {
         padding: 20px 30px;
     }
 }
