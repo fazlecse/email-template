@@ -1379,6 +1379,17 @@ hr.divider:after {
 }
 
 // Filter2 offcanvas seciton end
+// Email verification offcanvas start
+.email-verification-section {
+    .offcanvas {
+        .thumbs-area {
+            max-width: 250px;
+            margin: auto;
+        }
+    }
+}
+
+// Email verification offcanvas end
 // Cmn toggle button start
 .cmn-toggle-button {
     .toggle-button-cover {
@@ -3140,4 +3151,55 @@ Unsubscribe preview section start
 
 /*----------------------------------------------
 Unsubscribe preview section end
+----------------------------------------------*/
+/*----------------------------------------------
+Email form section start
+----------------------------------------------*/
+.email-form {
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.email-form .form-control {
+    border-radius: 50px;
+    height: 50px;
+    padding: 10px 50px 10px 10px;
+    border-color: var(--primary-color-opacity-low);
+}
+
+.email-form .form-control:focus {
+    border-color: var(--primary-color);
+}
+
+.email-form .subscribe-btn {
+    transition: var(--transition);
+    position: absolute;
+    right: 5px;
+    background-color: var(--primary-color);
+    height: calc(100% - 10px);
+    width: 40px;
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rtl .email-form .form-control {
+    padding: 10px 10px 10px 50px;
+}
+
+.rtl .email-form .subscribe-btn {
+    left: 5px;
+    right: auto;
+}
+
+.rtl .email-form .subscribe-btn i {
+    transform: rotatey(180deg);
+}
+
+/*----------------------------------------------
+Email form section end
 ----------------------------------------------*/

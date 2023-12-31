@@ -367,6 +367,8 @@
     <main id="main" class="main">
         <div class="pagetitle">
             <h3>Dashboard</h3>
+            <button type="button" class="cmn-btn" data-bs-toggle="offcanvas" data-bs-target="#emailVerify"
+                aria-controls="emailVerify">mail verify</button>
         </div>
         <!-- End Page Title -->
 
@@ -858,26 +860,26 @@
                             <label for="NumberOfSales" class="form-label">Number of sales</label>
                             <input type="text" class="form-control" id="NumberOfSales">
                         </div>
-                       <div class="col-md-6">
-                        <div id="formModal">
-                            <label class="form-label">status</label>
-                            <select class="modal-select" name="state">
-                                <option value="AL">All status</option>
-                                <option value="AL">Bangladesh</option>
-                                <option value="WY">Australia</option>
-                                <option value="WY">Belarus</option>
-                                <option value="WY">Canada</option>
-                                <option value="WY">China</option>
-                                <option value="WY">France</option>
-                                <option value="WY">Germany</option>
-                                <option value="WY">India</option>
-                                <option value="WY">Indonesia</option>
-                                <option value="WY">Italy</option>
-                                <option value="WY">Japan</option>
-                                <option value="WY">Korea</option>
-                            </select>
+                        <div class="col-md-6">
+                            <div id="formModal">
+                                <label class="form-label">status</label>
+                                <select class="modal-select" name="state">
+                                    <option value="AL">All status</option>
+                                    <option value="AL">Bangladesh</option>
+                                    <option value="WY">Australia</option>
+                                    <option value="WY">Belarus</option>
+                                    <option value="WY">Canada</option>
+                                    <option value="WY">China</option>
+                                    <option value="WY">France</option>
+                                    <option value="WY">Germany</option>
+                                    <option value="WY">India</option>
+                                    <option value="WY">Indonesia</option>
+                                    <option value="WY">Italy</option>
+                                    <option value="WY">Japan</option>
+                                    <option value="WY">Korea</option>
+                                </select>
+                            </div>
                         </div>
-                       </div>
                         <div class="btn-area">
                             <button type="submit" class="cmn-btn w-100">Filter</button>
                         </div>
@@ -888,7 +890,49 @@
         </div>
     </div>
     <!-- Filter2 offcanvas section end -->
-    
+
+    <!-- Email verification offcanvas start -->
+    <div class="email-verification-section">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="emailVerify" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Email Verification</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="thumbs-area">
+                    <img src="./assets/img/illustration/email-illustration.jpg" alt="">
+                </div>
+                <form class="email-form">
+                    <input type="text" class="form-control" placeholder="Your email">
+                    <button type="button" class="subscribe-btn"><i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+                <div class="mt-30">
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <div class="icon-area">
+                            <i class="fa-light fa-shield-check"></i>
+                        </div>
+                        <div class="text-area">
+                            <div class="title">success</div>
+                            <div class="description">Nice, you triggered this alert message!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                        <div class="icon-area">
+                            <i class="fa-light fa-circle-exclamation"></i>
+                        </div>
+                        <div class="text-area">
+                            <div class="title">error</div>
+                            <div class="description">Nice, you triggered this alert message!
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Email verification offcanvas end -->
+
     <!-- Offcanvas sidebar end -->
 
 
